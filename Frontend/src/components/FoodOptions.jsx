@@ -1,8 +1,10 @@
-import { useRef } from "react";
 import fastFoodData from "../data/fastFoodData";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Link } from "lucide-react";
+import { useRef } from "react";
+import { useNavigate } from "react-router";
 
 export default function FoodOptions() {
+  const navigate = useNavigate();
   const scrollRef = useRef(null);
 
   const scroll = (direction) => {
@@ -10,6 +12,11 @@ export default function FoodOptions() {
       left: direction === "left" ? -500 : 500,
       behavior: "smooth",
     });
+  };
+
+  const handleClick = (id) => {
+    console.log("Clicked food id:", id); // 🔴 DEBUG LINE
+    navigate(`/food/${id}`);
   };
 
   return (
@@ -46,6 +53,7 @@ export default function FoodOptions() {
             {fastFoodData.map((item) => (
               <div
                 key={item.id}
+                onClick={() => handleClick(item.id)}
                 className="flex flex-col items-center cursor-pointer hover:scale-105 transition"
               >
                 {/* Bigger Circle */}
