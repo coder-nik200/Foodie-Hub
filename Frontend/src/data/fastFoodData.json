@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Burger",
+    "photoURL": "https://images.unsplash.com/photo-1550547660-d9450f859349"
+  },
+  {
+    "id": 2,
+    "name": "Pizza",
+    "photoURL": "https://images.unsplash.com/photo-1548365328-8b849e6c7b1b"
+  },
+  {
+    "id": 3,
+    "name": "French Fries",
+    "photoURL": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877"
+  },
+  {
+    "id": 4,
+    "name": "Hot Dog",
+    "photoURL": "https://images.unsplash.com/photo-1619740455993-9d6c3b6f8f33"
+  },
+  {
+    "id": 5,
+    "name": "Sandwich",
+    "photoURL": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af"
+  },
+  {
+    "id": 6,
+    "name": "Fried Chicken",
+    "photoURL": "https://images.unsplash.com/photo-1604908554161-ff9d3e37e6c2"
+  },
+  {
+    "id": 7,
+    "name": "Chicken Wings",
+    "photoURL": "https://images.unsplash.com/photo-1606756790138-261d2b21cd75"
+  },
+  {
+    "id": 8,
+    "name": "Nuggets",
+    "photoURL": "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91"
+  },
+  {
+    "id": 9,
+    "name": "Tacos",
+    "photoURL": "https://images.unsplash.com/photo-1601924582975-7e670b7c45b5"
+  },
+  {
+    "id": 10,
+    "name": "Burrito",
+    "photoURL": "https://images.unsplash.com/photo-1625944526065-f8c61c6d78a1"
+  },
+  {
+    "id": 11,
+    "name": "Wrap",
+    "photoURL": "https://images.unsplash.com/photo-1598514982846-df8f6e1f6b94"
+  },
+  {
+    "id": 12,
+    "name": "Pasta",
+    "photoURL": "https://images.unsplash.com/photo-1525755662778-989d0524087e"
+  },
+  {
+    "id": 13,
+    "name": "Donut",
+    "photoURL": "https://images.unsplash.com/photo-1551024601-bec78aea704b"
+  },
+  {
+    "id": 14,
+    "name": "Momos",
+    "photoURL": "https://images.unsplash.com/photo-1628294895950-9805252327bc"
+  },
+  {
+    "id": 15,
+    "name": "Spring Roll",
+    "photoURL": "https://images.unsplash.com/photo-1601050690597-df0568f70950"
+  },
+  {
+    "id": 16,
+    "name": "Samosa",
+    "photoURL": "https://images.unsplash.com/photo-1604908177522-937b3b0e4c58"
+  },
+  {
+    "id": 17,
+    "name": "Pav Bhaji",
+    "photoURL": "https://images.unsplash.com/photo-1628294895685-83d3673d299c"
+  },
+  {
+    "id": 18,
+    "name": "Vada Pav",
+    "photoURL": "https://images.unsplash.com/photo-1631515243349-e0cb75fb8e34"
+  },
+  {
+    "id": 19,
+    "name": "Chowmein",
+    "photoURL": "https://images.unsplash.com/photo-1603133872878-684f208fb84b"
+  },
+  {
+    "id": 20,
+    "name": "Milkshake",
+    "photoURL": "https://images.unsplash.com/photo-1577805947697-89e18249d767"
+  }
+]
