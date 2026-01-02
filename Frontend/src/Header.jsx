@@ -79,7 +79,7 @@ export default function Header() {
           </Link>
 
           {/* AUTH BUTTONS */}
-          {/* {!user ? ( */}
+          {!user ? (
             <>
               <Link
                 to="/login"
@@ -94,15 +94,16 @@ export default function Header() {
                 Sign up
               </Link>
             </>
-          {/* ) : (
+          ) : (
             <Link
               to="/account"
-              className="flex items-center gap-2 border border-gray-300 dark:border-gray-700 rounded-full px-4 py-2"
+              className="flex items-center justify-center w-12 h-12 
+             rounded-full border border-gray-400 
+             hover:border-black transition-all duration-200"
             >
-              <FaUserCircle className="text-xl" />
-              <span className="font-medium">{user.name}</span>
+              <FaUserCircle className="text-3xl text-black" />
             </Link>
-          )} */}
+          )}
         </div>
       </div>
     </header>

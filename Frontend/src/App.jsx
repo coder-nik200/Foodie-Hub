@@ -1,4 +1,5 @@
 import "./App.css";
+import axios from "axios";
 import { UserContextProvider } from "./useContext";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./Layout";
@@ -6,6 +7,10 @@ import Signup from "./pages/Signup";
 import IndexPage from "./components/IndexPage";
 import Login from "./pages/LoginPage";
 import FoodDetails from "./pages/FoodDetails";
+
+//CORS
+axios.defaults.baseURL = "http://localhost:3000";
+axios.defaults.withCredentials = true;
 
 function App() {
   return (

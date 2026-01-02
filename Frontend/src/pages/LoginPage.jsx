@@ -15,12 +15,12 @@ export default function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
-    setError("");
 
     try {
       await axios.post("/login", formData, { withCredentials: true });
-      localStorage.setItem("token", res.data.token);
+      setLoading(true);
+      setError("");
+
       navigate("/"); // redirect after login
     } catch (err) {
       setError(err.response?.data?.message || "Login failed");

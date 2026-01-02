@@ -25,7 +25,11 @@ export default function Signup() {
     }
 
     try {
-      await axios.post("/signup", formData);
+      const response = await axios.post("/signup", formData);
+
+      console.log("Signup successfully: ", response.data);
+      alert("Signup successfully ✅");
+
       navigate("/login");
     } catch (err) {
       setError(err.response?.data?.message || "Signup failed");

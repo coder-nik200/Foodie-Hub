@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const cookieParser = require("cookie-parser");
+const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
@@ -12,17 +13,19 @@ const app = express();
 const authRouter = require("./routes/authRouter");
 const userRouter = require("./routes/userRouter");
 const hostRouter = require("./routes/hostRouter");
-const cors = require("./config/cors");
+const foodRouter = require("./routes/foodRouter");
+const corsOptions = require("./config/cors");
 
 //Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(cors);
+app.use(cors(corsOptions));
 
 app.use("/auth", authRouter);
 app.use(userRouter);
 app.use("/host", hostRouter);
+app.use("/foods", foodRouter);
 
 //Database connection
 mongoose
