@@ -4,6 +4,7 @@ import SweetData from "./SweetData";
 import ViewAllHits from "./ViewAllHits";
 import Drinks from "./Drinks";
 import SpotLight from "./Spotlight";
+import Testimonials from "./Testimonials";
 
 const IndexPage = () => {
   return (
@@ -14,6 +15,7 @@ const IndexPage = () => {
       <SweetData />
       <Drinks />
       <SpotLight />
+      <Testimonials />
     </>
   );
 };

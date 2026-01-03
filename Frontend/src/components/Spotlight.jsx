@@ -3,7 +3,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const images = [
   "https://b.zmtcdn.com/data/pictures/4/21804514/641e35fe9a6d5e9ed7c9f7a5a1b79493_o2_featured_v2.jpg",
-  "https://b.zmtcdn.com/data/pictures/8/21236208/94de8b5c9b82bae417f314c05ee3efe1_o2_featured_v2.jpg",
+  "https://images.squarespace-cdn.com/content/v1/5327567de4b0bcdfa66c1a8c/1624474563962-ZFK0Z8OVTIHZJR5KP4G9/SkandiaShafer_PrettyHealthy2E2A2938.jpg?format=1500w",
   "https://b.zmtcdn.com/data/pictures/0/19254410/95394a227c2e7c4785b2f513c57a895e_o2_featured_v2.jpg",
   "https://b.zmtcdn.com/data/pictures/5/20801405/bcc534afcc5930d034e18433345b5cc0_o2_featured_v2.jpg",
   "https://b.zmtcdn.com/data/pictures/2/18972832/d9e9d1862af64886b627b8d54c77065d_o2_featured_v2.jpg",
