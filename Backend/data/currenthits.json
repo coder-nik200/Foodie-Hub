@@ -14,6 +14,10 @@
         "mrp": 399,
         "discountedPrice": 299,
         "discountPercent": 25
+      },
+      "rating": {
+        "value": 4.5,
+        "reviews": 120
       }
     },
     {
@@ -30,6 +34,10 @@
         "mrp": 149,
         "discountedPrice": 119,
         "discountPercent": 20
+      },
+      "rating": {
+        "value": 4.2,
+        "reviews": 90
       }
     },
     {
@@ -46,6 +54,10 @@
         "mrp": 219,
         "discountedPrice": 179,
         "discountPercent": 18
+      },
+      "rating": {
+        "value": 4.4,
+        "reviews": 75
       }
     },
     {
@@ -62,6 +74,10 @@
         "mrp": 129,
         "discountedPrice": 99,
         "discountPercent": 23
+      },
+      "rating": {
+        "value": 4.0,
+        "reviews": 150
       }
     },
     {
@@ -78,6 +94,10 @@
         "mrp": 249,
         "discountedPrice": 199,
         "discountPercent": 20
+      },
+      "rating": {
+        "value": 4.3,
+        "reviews": 65
       }
     },
     {
@@ -94,6 +114,10 @@
         "mrp": 199,
         "discountedPrice": 159,
         "discountPercent": 20
+      },
+      "rating": {
+        "value": 4.6,
+        "reviews": 110
       }
     },
     {
@@ -102,7 +126,6 @@
       "slug": "veg-loaded-nachos",
       "category": "Snacks",
       "photoURL": "https://imgs.search.brave.com/XrY9VBFT8vwFmD1-0rXO7fQ7bCybRdwZ-xDyVLxpp94/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/dGFtaW5ndHdpbnMu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIyLzA3L3ZlZ2dp/ZS1uYWNob3MtMi5q/cGc",
-      "usp": "Nachos topped with cheese and veggies",
       "weight": "300g",
       "pieces": "1 plate",
       "serves": "2-3",
@@ -110,6 +133,10 @@
         "mrp": 249,
         "discountedPrice": 189,
         "discountPercent": 24
+      },
+      "rating": {
+        "value": 4.1,
+        "reviews": 85
       }
     },
     {
@@ -126,6 +153,10 @@
         "mrp": 179,
         "discountedPrice": 139,
         "discountPercent": 22
+      },
+      "rating": {
+        "value": 4.4,
+        "reviews": 95
       }
     },
     {
@@ -142,6 +173,10 @@
         "mrp": 189,
         "discountedPrice": 149,
         "discountPercent": 21
+      },
+      "rating": {
+        "value": 4.3,
+        "reviews": 80
       }
     },
     {
@@ -158,6 +193,10 @@
         "mrp": 349,
         "discountedPrice": 279,
         "discountPercent": 20
+      },
+      "rating": {
+        "value": 4.7,
+        "reviews": 140
       }
     },
     {
@@ -174,6 +213,10 @@
         "mrp": 229,
         "discountedPrice": 179,
         "discountPercent": 22
+      },
+      "rating": {
+        "value": 4.5,
+        "reviews": 100
       }
     },
     {
@@ -190,6 +233,130 @@
         "mrp": 149,
         "discountedPrice": 119,
         "discountPercent": 20
+      },
+      "rating": {
+        "value": 4.6,
+        "reviews": 90
+      }
+    },
+    {
+      "variantId": "ff_1013",
+      "name": "Tandoori Chicken (Half)",
+      "slug": "tandoori-chicken-half",
+      "category": "Starters",
+      "photoURL": "https://b.zmtcdn.com/data/dish_photos/1ca/d934aea04bcd0548d88504906f0ad1ca.jpg?output-format=webp",
+      "usp": "Smoky tandoori chicken marinated in spices",
+      "weight": "450g",
+      "pieces": "4 pcs",
+      "serves": "2",
+      "price": {
+        "mrp": 399,
+        "discountedPrice": 329,
+        "discountPercent": 18
+      },
+      "rating": {
+        "value": 4.8,
+        "reviews": 130
+      }
+    },
+    {
+      "variantId": "ff_1014",
+      "name": "Masala Dosa",
+      "slug": "masala-dosa",
+      "category": "South Indian",
+      "photoURL": "https://b.zmtcdn.com/data/dish_photos/078/dbcffeb70eb08ec763f8d00d38c69078.jpg?output-format=webp",
+      "usp": "Crispy dosa stuffed with spicy potato masala",
+      "weight": "1 plate",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "mrp": 149,
+        "discountedPrice": 119,
+        "discountPercent": 20
+      },
+      "rating": {
+        "value": 4.4,
+        "reviews": 85
+      }
+    },
+    {
+      "variantId": "ff_1015",
+      "name": "Chole Bhature",
+      "slug": "chole-bhature",
+      "category": "North Indian",
+      "photoURL": "https://b.zmtcdn.com/data/dish_photos/0c9/04d73ec4a9436256ec9bf39147a560c9.jpg?output-format=webp",
+      "usp": "Spicy chickpeas served with fluffy bhature",
+      "weight": "2 bhature",
+      "pieces": "1 plate",
+      "serves": "1-2",
+      "price": {
+        "mrp": 199,
+        "discountedPrice": 159,
+        "discountPercent": 20
+      },
+      "rating": {
+        "value": 4.3,
+        "reviews": 95
+      }
+    },
+    {
+      "variantId": "ff_1016",
+      "name": "Strawberry Milkshake",
+      "slug": "strawberry-milkshake",
+      "category": "Beverages",
+      "photoURL": "https://b.zmtcdn.com/data/dish_photos/1e4/22b8895d51fabc6dbae975c8fda851e4.jpeg",
+      "usp": "Creamy strawberry shake with fresh pulp",
+      "weight": "400ml",
+      "pieces": "1 glass",
+      "serves": "1",
+      "price": {
+        "mrp": 159,
+        "discountedPrice": 129,
+        "discountPercent": 19
+      },
+      "rating": {
+        "value": 4.2,
+        "reviews": 75
+      }
+    },
+    {
+      "variantId": "ff_1017",
+      "name": "Vanilla Ice Cream",
+      "slug": "vanilla-ice-cream",
+      "category": "Dessert",
+      "photoURL": "https://b.zmtcdn.com/data/pictures/chains/8/19428618/55bc3ca3172d678a005f9c152949154b_o2_featured_v2.jpg?output-format=webp",
+      "usp": "Classic creamy vanilla ice cream",
+      "weight": "150g",
+      "pieces": "2 scoops",
+      "serves": "1",
+      "price": {
+        "mrp": 99,
+        "discountedPrice": 79,
+        "discountPercent": 20
+      },
+      "rating": {
+        "value": 4.5,
+        "reviews": 60
+      }
+    },
+    {
+      "variantId": "ff_1018",
+      "name": "Paneer Butter Masala Pizza",
+      "slug": "paneer-butter-masala-pizza",
+      "category": "Pizza",
+      "photoURL": "https://b.zmtcdn.com/data/pictures/3/20346383/cb711ccd47df40fea53b00ea3e02409b_o2_featured_v2.jpg?output-format=webp",
+      "usp": "Fusion pizza topped with creamy paneer butter masala",
+      "weight": "10 inch",
+      "pieces": "6 slices",
+      "serves": "2",
+      "price": {
+        "mrp": 449,
+        "discountedPrice": 349,
+        "discountPercent": 22
+      },
+      "rating": {
+        "value": 4.6,
+        "reviews": 100
       }
     }
   ]

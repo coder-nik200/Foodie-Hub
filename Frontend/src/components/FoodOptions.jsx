@@ -16,7 +16,7 @@ export default function FoodOptions() {
   };
 
   const handleClick = (id) => {
-    navigate(`/food/${id}`);
+    navigate(`/foods/${id}`);
   };
 
   useEffect(() => {
@@ -45,7 +45,10 @@ export default function FoodOptions() {
           <ChevronLeft size={28} />
         </button>
 
-        <div ref={scrollRef} className="overflow-x-auto w-full px-14 no-scrollbar">
+        <div
+          ref={scrollRef}
+          className="overflow-x-auto w-full px-14 no-scrollbar"
+        >
           <div className="grid grid-rows-2 grid-flow-col gap-x-12 gap-y-14 auto-cols-[180px]">
             {data.map((item) => (
               <div

@@ -54,33 +54,37 @@ const getFoodOptions = async (req, res) => {
 };
 
 // Get food by ID
-const getFoodById = async (req, res) => {
+const getFoodById = (req, res) => {
   const { id } = req.params;
+
+  const food = fastFoodData.find((item) => item.id === Number(id));
+
+  if (!food) {
+    return res.status(404).json({ message: "Food not found" });
+  }
+
+  res.json({ product: food });
+};
+
+// Get all current hits
+const getCurrentHits = async (req, res) => {
   try {
-    let food = null;
-
-    food = fastFoodData.find((item) => item.id === Number(id));
-
-    if (!food) {
-      food = currentHits.products.find((item) => item.variantId === id);
-    }
-
-    // if (!food) {
-    //   food = muttonData.products.find((item) => item.variantId === id);
-    // }
-
-    if (!food) {
-      return res.status(404).json({ message: "Food not found" });
-    }
-    res.status(200).json({ product: food });
+    res.json({ products: currentHits.products }); // send all products
   } catch (error) {
     res.status(500).json({ message: "Food API failed" });
   }
 };
 
-const getCurrentHits = async (req, res) => {
+// Get current hits by ID
+const getFoodDetails = async (req, res) => {
+  const { id } = req.params;
   try {
-    res.json({ products: currentHits.products }); // send all products
+    const food = currentHits.products.find((item) => item.variantId === id);
+
+    if (!food) {
+      return res.status(404).json({ message: "Food not found" });
+    }
+    res.status(200).json({ product: food });
   } catch (error) {
     res.status(500).json({ message: "Food API failed" });
   }
@@ -102,4 +106,11 @@ const getDrinks = async (req, res) => {
   }
 };
 
-export { getFoodOptions, getFoodById, getCurrentHits, getSweetFood, getDrinks };
+export {
+  getFoodOptions,
+  getFoodDetails,
+  getFoodById,
+  getCurrentHits,
+  getSweetFood,
+  getDrinks,
+};

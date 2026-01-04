@@ -10,13 +10,13 @@ const ViewAllHits = () => {
   const [error, setError] = useState("");
 
   const handleClick = (variantId) => {
-    navigate(`/food/${variantId}`);
+    navigate(`/foods/view-all-hits/${variantId}`);
   };
 
   useEffect(() => {
     api
       .get("/foods/view-all-hits")
-      .then((res) => setFood(res.data.products)) // ✅ use API response
+      .then((res) => setFood(res.data.products || [])) // ✅ use API response
       .catch((err) => {
         if (err.response) {
           setError(err.response.data.message);
@@ -54,51 +54,47 @@ const ViewAllHits = () => {
 
       {/* Product Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-        {food.map((item) => (
-          <div
-            key={item.variantId}
-            onClick={() => handleClick(item.variantId)}
-            className="bg-white rounded-b-2xl shadow-lg"
-          >
-            {/* Product Image */}
-            <img
-              src={item.photoURL}
-              alt={item.name}
-              className="w-full h-60 object-cover rounded-t-2xl"
-            />
-            <div className="p-3">
-              {/* Product Name */}
-              <h3 className="font-medium mt-2 text-sm sm:text-base md:text-base">
-                {item.name.length > 48
-                  ? item.name.slice(0, 30) + "..."
-                  : item.name}
-              </h3>
-
-              {/* USP */}
-              <p className="text-xs sm:text-sm">
-                {item.usp.length > 48
-                  ? item.usp.slice(0, 48) + "..."
-                  : item.usp}
-              </p>
-
-              {/* Weight | Pieces | Serves */}
-              <p className="text-sm text-gray-600 mt-1">
-                {item.weight} | {item.pieces} pcs | Serves {item.serves}
-              </p>
-
-              {/* Price */}
-              <p className="font-semibold mt-2">
-                ₹{item.price.discountedPrice}
-                <span className="text-gray-400 line-through ml-1">
-                  ₹{item.price.mrp}
-                </span>
-                <span className="text-green-600 ml-1">
-                  ({item.price.discountPercent}% OFF)
-                </span>
-              </p>
+        {food?.length > 0 ? (
+          food.map((item) => (
+            <div
+              key={item.variantId}
+              onClick={() => handleClick(item.variantId)}
+              className="bg-white rounded-b-2xl shadow-lg cursor-pointer"
+            >
+              <img
+                src={item.photoURL}
+                alt={item.name}
+                className="w-full h-60 object-cover rounded-t-2xl"
+              />
+              <div className="p-3">
+                <h3 className="font-medium mt-2 text-sm sm:text-base md:text-base">
+                  {item.name?.length > 48
+                    ? item.name.slice(0, 30) + "..."
+                    : item.name}
+                </h3>
+                <p className="text-xs sm:text-sm">
+                  {item.usp?.length > 48
+                    ? item.usp.slice(0, 48) + "..."
+                    : item.usp}
+                </p>
+                <p className="text-sm text-gray-600 mt-1">
+                  {item.weight} | {item.pieces} pcs | Serves {item.serves}
+                </p>
+                <p className="font-semibold mt-2">
+                  ₹{item.price?.discountedPrice || 0}
+                  <span className="text-gray-400 line-through ml-1">
+                    ₹{item.price?.mrp || 0}
+                  </span>
+                  <span className="text-green-600 ml-1">
+                    ({item.price?.discountPercent || 0}% OFF)
+                  </span>
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))
+        ) : (
+          <p className="text-center col-span-full mt-4">No products found</p>
+        )}
       </div>
 
       {/* Error Message */}

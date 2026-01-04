@@ -23,8 +23,8 @@ function App() {
           <Route index element={<IndexPage />} />
           <Route path="signup" element={<Signup />} />
           <Route path="login" element={<Login />} />
-          <Route path="food/:id" element={<FoodDetails />} />
-          <Route path="/food/:id" element={<ViewAllHitsPage />} />
+          <Route path="foods/:id" element={<FoodDetails />} />
+          <Route path="/foods/view-all-hits/:id" element={<ViewAllHitsPage />} />
           <Route path="/foods/sweet" element={<SweetDetails />} />
           <Route path="/foods/drinks" element={<DrinksDetails />} />
         </Route>
