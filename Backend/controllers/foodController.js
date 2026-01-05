@@ -43,6 +43,9 @@ const sweetsData = JSON.parse(
 const drinksData = JSON.parse(
   fs.readFileSync(new URL("../data/drinksData.json", import.meta.url))
 );
+const foodData = JSON.parse(
+  fs.readFileSync(new URL("../data/foodData.json", import.meta.url))
+);
 
 // Get all food options
 const getFoodOptions = async (req, res) => {
@@ -79,7 +82,13 @@ const getCurrentHits = async (req, res) => {
 const getFoodDetails = async (req, res) => {
   const { id } = req.params;
   try {
-    const food = currentHits.products.find((item) => item.variantId === id);
+    let food = null;
+
+    food = currentHits.products.find((item) => item.variantId === id);
+
+    if (!food && foodData?.products) {
+      food = foodData.products.find((item) => item.id === id);
+    }
 
     if (!food) {
       return res.status(404).json({ message: "Food not found" });
@@ -106,6 +115,19 @@ const getDrinks = async (req, res) => {
   }
 };
 
+const getSpecificItem = async (req, res) => {
+  const categoryId = Number(req.params.id);
+
+  const filteredItems = foodData.products.filter(
+    (item) => item.categoryId === categoryId
+  );
+
+  res.json({
+    total: filteredItems.length,
+    products: filteredItems,
+  });
+};
+
 export {
   getFoodOptions,
   getFoodDetails,
@@ -113,4 +135,5 @@ export {
   getCurrentHits,
   getSweetFood,
   getDrinks,
+  getSpecificItem,
 };

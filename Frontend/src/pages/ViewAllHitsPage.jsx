@@ -17,7 +17,7 @@ const renderStars = (ratingValue) => {
   );
 };
 
-export default function FoodDetails() {
+export default function ViewAllHitsPage() {
   const { id } = useParams();
   const [food, setFood] = useState(null);
   const [allFoods, setAllFoods] = useState([]);

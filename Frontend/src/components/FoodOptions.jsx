@@ -16,7 +16,7 @@ export default function FoodOptions() {
   };
 
   const handleClick = (id) => {
-    navigate(`/foods/${id}`);
+    navigate(`/foods/category/${id}`);
   };
 
   useEffect(() => {
