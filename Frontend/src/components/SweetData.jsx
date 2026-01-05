@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 import api from "../api/axios";
@@ -94,31 +94,33 @@ const SweetData = () => {
             key={item.variantId}
             className="w-[15rem] sm:w-[16rem] md:w-[18rem] bg-white rounded-lg p-3 flex-shrink-0"
           >
-            <img
-              src={item.image}
-              alt={item.name}
-              className="w-full h-32 sm:h-36 md:h-40 object-cover rounded-2xl"
-            />
+            <Link to={`/foods/sweet/${item.variantId}`} key={item.id}>
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-full h-32 sm:h-36 md:h-40 object-cover rounded-2xl"
+              />
 
-            <h3 className="font-medium mt-2 text-sm sm:text-xl md:text-lg">
-              {item.name.length > 30
-                ? item.name.slice(0, 30) + "..."
-                : item.name}
-            </h3>
+              <h3 className="font-medium mt-2 text-sm sm:text-xl md:text-lg">
+                {item.name.length > 30
+                  ? item.name.slice(0, 30) + "..."
+                  : item.name}
+              </h3>
 
-            <p className="text-xs sm:text-sm text-gray-600 mt-1">
-              {item.weight} | {item.pieces} pcs | Serves {item.serves}
-            </p>
+              <p className="text-xs sm:text-sm text-gray-600 mt-1">
+                {item.weight} | {item.pieces} pcs | Serves {item.serves}
+              </p>
 
-            <p className="font-semibold mt-2 text-sm sm:text-base md:text-base">
-              ₹{item.discountedPrice}
-              <span className="text-gray-400 line-through ml-1">
-                ₹{item.basePrice}
-              </span>
-              <span className="text-green-600 ml-1">
-                ({item.discountPercentage}% OFF)
-              </span>
-            </p>
+              <p className="font-semibold mt-2 text-sm sm:text-base md:text-base">
+                ₹{item.discountedPrice}
+                <span className="text-gray-400 line-through ml-1">
+                  ₹{item.basePrice}
+                </span>
+                <span className="text-green-600 ml-1">
+                  ({item.discountPercentage}% OFF)
+                </span>
+              </p>
+            </Link>
           </div>
         ))}
 

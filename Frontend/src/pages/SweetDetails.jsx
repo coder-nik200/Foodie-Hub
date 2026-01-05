@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
 import { useEffect, useState } from "react";
@@ -51,35 +51,37 @@ const SweetDetails = () => {
             key={item.variantId}
             className="bg-white rounded-b-2xl shadow-lg"
           >
-            <img
-              src={item.image}
-              alt={item.name}
-              className="w-full h-60 object-cover rounded-t-2xl"
-              onError={(e) => {
-                e.target.src =
-                  "https://images.unsplash.com/photo-1601050690597-df0568f70950";
-              }}
-            />
+            <Link to={`/foods/sweet/${item.variantId}`} key={item.id}>
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-full h-60 object-cover rounded-t-2xl"
+                onError={(e) => {
+                  e.target.src =
+                    "https://images.unsplash.com/photo-1601050690597-df0568f70950";
+                }}
+              />
 
-            <div className="p-3">
-              <h3 className="font-medium mt-2">{item.name}</h3>
+              <div className="p-3">
+                <h3 className="font-medium mt-2">{item.name}</h3>
 
-              <p className="text-sm text-gray-600">{item.uspDescription}</p>
+                <p className="text-sm text-gray-600">{item.uspDescription}</p>
 
-              <p className="text-sm text-gray-600 mt-1">
-                {item.weight} | {item.pieces || "-"} | Serves {item.serves}
-              </p>
+                <p className="text-sm text-gray-600 mt-1">
+                  {item.weight} | {item.pieces || "-"} | Serves {item.serves}
+                </p>
 
-              <p className="font-semibold mt-2">
-                ₹{item.discountedPrice}
-                <span className="line-through text-gray-400 ml-1">
-                  ₹{item.basePrice}
-                </span>
-                <span className="text-green-600 ml-1">
-                  ({item.discountPercentage}% OFF)
-                </span>
-              </p>
-            </div>
+                <p className="font-semibold mt-2">
+                  ₹{item.discountedPrice}
+                  <span className="line-through text-gray-400 ml-1">
+                    ₹{item.basePrice}
+                  </span>
+                  <span className="text-green-600 ml-1">
+                    ({item.discountPercentage}% OFF)
+                  </span>
+                </p>
+              </div>
+            </Link>
           </div>
         ))}
       </div>

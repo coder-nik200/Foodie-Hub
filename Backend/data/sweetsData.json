@@ -10,7 +10,11 @@
       "basePrice": 899,
       "discountedPrice": 799,
       "discountPercentage": 11,
-      "uspDescription": "Premium cashew fudge with rich silver leaf finish"
+      "uspDescription": "Premium cashew fudge with rich silver leaf finish",
+      "rating": {
+        "value": 4.7,
+        "reviews": 210
+      }
     },
     {
       "variantId": "sw_gulabjamun_02",
@@ -22,7 +26,11 @@
       "basePrice": 499,
       "discountedPrice": 399,
       "discountPercentage": 20,
-      "uspDescription": "Soft, juicy jamuns soaked in aromatic sugar syrup"
+      "uspDescription": "Soft, juicy jamuns soaked in aromatic sugar syrup",
+      "rating": {
+        "value": 4.6,
+        "reviews": 185
+      }
     },
     {
       "variantId": "sw_rasgulla_03",
@@ -34,7 +42,11 @@
       "basePrice": 459,
       "discountedPrice": 389,
       "discountPercentage": 15,
-      "uspDescription": "Spongy cottage cheese balls in light sugar syrup"
+      "uspDescription": "Spongy cottage cheese balls in light sugar syrup",
+      "rating": {
+        "value": 4.5,
+        "reviews": 160
+      }
     },
     {
       "variantId": "sw_motichoor_04",
@@ -46,7 +58,11 @@
       "basePrice": 249,
       "discountedPrice": 249,
       "discountPercentage": 0,
-      "uspDescription": "Soft and aromatic ladoos made with fine besan pearls"
+      "uspDescription": "Soft and aromatic ladoos made with fine besan pearls",
+      "rating": {
+        "value": 4.3,
+        "reviews": 95
+      }
     },
     {
       "variantId": "sw_barfi_05",
@@ -58,7 +74,11 @@
       "basePrice": 399,
       "discountedPrice": 359,
       "discountPercentage": 10,
-      "uspDescription": "Classic milk barfi with rich and creamy texture"
+      "uspDescription": "Classic milk barfi with rich and creamy texture",
+      "rating": {
+        "value": 4.4,
+        "reviews": 130
+      }
     },
     {
       "variantId": "sw_rasmalai_06",
@@ -70,7 +90,11 @@
       "basePrice": 549,
       "discountedPrice": 479,
       "discountPercentage": 13,
-      "uspDescription": "Soft paneer discs soaked in saffron flavored milk"
+      "uspDescription": "Soft paneer discs soaked in saffron flavored milk",
+      "rating": {
+        "value": 4.6,
+        "reviews": 175
+      }
     }
   ]
 }

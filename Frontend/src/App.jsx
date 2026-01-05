@@ -10,6 +10,8 @@ import FoodDetails from "./pages/FoodDetails";
 import ViewAllHitsPage from "./pages/ViewAllHitsPage";
 import SweetDetails from "./pages/SweetDetails";
 import DrinksDetails from "./pages/DrinksDetails";
+import SpecificSweetPage from "./pages/SpecificSweetPage";
+import SpecificDrinkPage from "./pages/SpecificDrinkPage";
 
 //CORS
 axios.defaults.baseURL = "http://localhost:3000";
@@ -30,7 +32,9 @@ function App() {
           />
 
           <Route path="/foods/sweet" element={<SweetDetails />} />
+          <Route path="/foods/sweet/:id" element={<SpecificSweetPage />} />
           <Route path="/foods/drinks" element={<DrinksDetails />} />
+          <Route path="/foods/drinks/:id" element={<SpecificDrinkPage />} />
         </Route>
       </Routes>
     </UserContextProvider>

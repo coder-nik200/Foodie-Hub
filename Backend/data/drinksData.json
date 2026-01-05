@@ -10,7 +10,11 @@
       "serves": "1",
       "basePrice": 120,
       "discountedPrice": 99,
-      "discountPercentage": 18
+      "discountPercentage": 18,
+      "rating": {
+        "value": 4.6,
+        "reviews": 95
+      }
     },
     {
       "variantId": "dr_cold_coffee_02",
@@ -22,7 +26,11 @@
       "serves": "1",
       "basePrice": 150,
       "discountedPrice": 119,
-      "discountPercentage": 21
+      "discountPercentage": 21,
+      "rating": {
+        "value": 4.5,
+        "reviews": 120
+      }
     },
     {
       "variantId": "dr_blue_mojito_03",
@@ -34,7 +42,11 @@
       "serves": "1",
       "basePrice": 180,
       "discountedPrice": 149,
-      "discountPercentage": 17
+      "discountPercentage": 17,
+      "rating": {
+        "value": 4.4,
+        "reviews": 80
+      }
     },
     {
       "variantId": "dr_strawberry_milkshake_04",
@@ -46,7 +58,11 @@
       "serves": "1",
       "basePrice": 170,
       "discountedPrice": 139,
-      "discountPercentage": 18
+      "discountPercentage": 18,
+      "rating": {
+        "value": 4.6,
+        "reviews": 110
+      }
     },
     {
       "variantId": "dr_fresh_lime_soda_05",
@@ -58,7 +74,11 @@
       "serves": "1",
       "basePrice": 90,
       "discountedPrice": 79,
-      "discountPercentage": 12
+      "discountPercentage": 12,
+      "rating": {
+        "value": 4.3,
+        "reviews": 70
+      }
     },
     {
       "variantId": "dr_chocolate_thickshake_06",
@@ -70,7 +90,11 @@
       "serves": "1",
       "basePrice": 190,
       "discountedPrice": 159,
-      "discountPercentage": 16
+      "discountPercentage": 16,
+      "rating": {
+        "value": 4.7,
+        "reviews": 140
+      }
     }
   ]
 }

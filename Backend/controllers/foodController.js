@@ -86,6 +86,10 @@ const getFoodDetails = async (req, res) => {
 
     food = currentHits.products.find((item) => item.variantId === id);
 
+    if (!food && sweetsData?.products) {
+      food = sweetsData.products.find((item) => item.variantId === id);
+    }
+
     if (!food && foodData?.products) {
       food = foodData.products.find((item) => item.id === id);
     }
@@ -107,10 +111,52 @@ const getSweetFood = async (req, res) => {
   }
 };
 
+const getSpecificSweet = async (req, res) => {
+  const { id } = req.params;
+
+  if (!id || id === "undefined") {
+    return res.status(400).json({ message: "Invalid sweet ID" });
+  }
+
+  try {
+    const food = sweetsData.products.find((item) => item.variantId === id);
+
+    if (!food) {
+      return res.status(404).json({ message: "Food not found" });
+    }
+
+    res.status(200).json({ product: food });
+  } catch (error) {
+    console.error("Error in getSpecificSweet:", error);
+    res.status(500).json({ message: "Food API failed" });
+  }
+};
+
 const getDrinks = async (req, res) => {
   try {
     res.json({ products: drinksData.products }); // send all products
   } catch (error) {
+    res.status(500).json({ message: "Food API failed" });
+  }
+};
+
+const getSpecificDrink = async (req, res) => {
+  const { id } = req.params;
+
+  if (!id || id === "undefined") {
+    return res.status(400).json({ message: "Invalid sweet ID" });
+  }
+
+  try {
+    const food = drinksData.products.find((item) => item.variantId === id);
+
+    if (!food) {
+      return res.status(404).json({ message: "Food not found" });
+    }
+
+    res.status(200).json({ product: food });
+  } catch (error) {
+    console.error("Error in getSpecificSweet:", error);
     res.status(500).json({ message: "Food API failed" });
   }
 };
@@ -136,4 +182,6 @@ export {
   getSweetFood,
   getDrinks,
   getSpecificItem,
+  getSpecificSweet,
+  getSpecificDrink,
 };

@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
 import api from "../api/axios";
@@ -50,44 +50,46 @@ const DrinksDetails = () => {
             key={item.variantId}
             className="bg-white rounded-b-2xl shadow-lg"
           >
-            {/* Product Image */}
-            <img
-              src={item.image}
-              alt={item.name}
-              className="w-full h-60 object-cover rounded-t-2xl"
-            />
+            <Link to={`/foods/drinks/${item.variantId}`} key={item.id}>
+              {/* Product Image */}
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-full h-60 object-cover rounded-t-2xl"
+              />
 
-            <div className="p-3">
-              {/* Product Name */}
-              <h3 className="font-medium mt-2 text-sm sm:text-base md:text-base">
-                {item.name.length > 48
-                  ? item.name.slice(0, 30) + "..."
-                  : item.name}
-              </h3>
+              <div className="p-3">
+                {/* Product Name */}
+                <h3 className="font-medium mt-2 text-sm sm:text-base md:text-base">
+                  {item.name.length > 48
+                    ? item.name.slice(0, 30) + "..."
+                    : item.name}
+                </h3>
 
-              {/* USP / Description */}
-              {/* <p className="text-xs sm:text-sm">
-                {item.uspDescription.length > 48
-                  ? item.uspDescription.slice(0, 48) + "..."
-                  : item.uspDescription}
-              </p> */}
+                {/* USP / Description */}
+                <p className="text-xs sm:text-sm">
+                  {item.uspDescription.length > 48
+                    ? item.uspDescription.slice(0, 48) + "..."
+                    : item.uspDescription}
+                </p>
 
-              {/* Weight | Pieces | Serves */}
-              <p className="text-sm text-gray-600 mt-1">
-                {item.weight} | {item.pieces} pcs | Serves {item.serves}
-              </p>
+                {/* Weight | Pieces | Serves */}
+                <p className="text-sm text-gray-600 mt-1">
+                  {item.weight} | {item.pieces} pcs | Serves {item.serves}
+                </p>
 
-              {/* Price */}
-              <p className="font-semibold mt-2">
-                ₹{item.discountedPrice}
-                <span className="text-gray-400 line-through ml-1">
-                  ₹{item.basePrice}
-                </span>
-                <span className="text-green-600 ml-1">
-                  ({item.discountPercentage}% OFF)
-                </span>
-              </p>
-            </div>
+                {/* Price */}
+                <p className="font-semibold mt-2">
+                  ₹{item.discountedPrice}
+                  <span className="text-gray-400 line-through ml-1">
+                    ₹{item.basePrice}
+                  </span>
+                  <span className="text-green-600 ml-1">
+                    ({item.discountPercentage}% OFF)
+                  </span>
+                </p>
+              </div>
+            </Link>
           </div>
         ))}
       </div>
