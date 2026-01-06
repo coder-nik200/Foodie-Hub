@@ -1,6 +1,7 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "./useContext";
+import api from "./api/axios";
 import {
   IoFastFoodOutline,
   IoSearch,
@@ -17,6 +18,7 @@ export default function Header() {
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("theme") === "dark"
   );
+  const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
     if (darkMode) {
@@ -99,14 +101,44 @@ export default function Header() {
               </Link>
             </>
           ) : (
-            <Link
-              to="/account"
-              className="flex items-center justify-center w-12 h-12 
-             rounded-full border border-gray-400 
-             hover:border-black transition-all duration-200"
-            >
-              <FaUserCircle className="text-3xl text-black" />
-            </Link>
+            <div className="relative">
+              {/* Avatar Button */}
+              <button
+                onClick={() => setShowMenu((s) => !s)}
+                className="flex items-center justify-center w-11 h-11 rounded-full bg-white border border-gray-400 shadow-sm hover:shadow-md hover:border-gray-600 transition-all duration-200"
+              >
+                <FaUserCircle className="text-3xl text-black-700" />
+              </button>
+
+              {showMenu && (
+                <div className="absolute right-0 mt-3 w-48 bg-white rounded-xl shadow-xl border border-gray-300 overflow-hidden z-50">
+                  {/* User Info */}
+                  <div className="px-4 py-3">
+                    <p className="font-semibold text-black-800 truncate">
+                      {user.firstName || user.email || "User"}
+                    </p>
+                  </div>
+
+                  {/* Divider */}
+                  <div className="h-px bg-gray-400" />
+
+                  {/* Logout */}
+                  <button
+                    onClick={async () => {
+                      try {
+                        await api.get("/auth/logout", {
+                          withCredentials: true,
+                        });
+                      } catch {}
+                      window.location.reload();
+                    }}
+                    className="w-full text-left px-4 py-3 text-sm font-medium text-red-600 hover:bg-gray-100 transition"
+                  >
+                    Logout
+                  </button>
+                </div>
+              )}
+            </div>
           )}
         </div>
       </div>

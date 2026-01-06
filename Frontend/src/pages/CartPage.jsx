@@ -10,8 +10,10 @@ export default function CartPage() {
     const id = item.variantId || item.id;
     // Prefer explicit variantId prefix where category may be missing
     if (typeof id === "string") {
-      if (id.startsWith("sw_") || id.startsWith("sw")) return `/foods/sweet/${id}`;
-      if (id.startsWith("dr_") || id.startsWith("dr")) return `/foods/drinks/${id}`;
+      if (id.startsWith("sw_") || id.startsWith("sw"))
+        return `/foods/sweet/${id}`;
+      if (id.startsWith("dr_") || id.startsWith("dr"))
+        return `/foods/drinks/${id}`;
     }
     const cat = (item.category || "").toString().toLowerCase();
     if (cat.includes("sweet")) return `/foods/sweet/${id}`;
