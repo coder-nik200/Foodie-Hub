@@ -1,5 +1,7 @@
-import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import { IoFastFoodOutline } from "react-icons/io5";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
@@ -23,9 +25,14 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-3">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              <li className="hover:text-white cursor-pointer">Home</li>
-              <li className="hover:text-white cursor-pointer">Menu</li>
-              <li className="hover:text-white cursor-pointer">Offers</li>
+              <Link
+                to="/"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
+                <li className="hover:text-white cursor-pointer">Home</li>
+                <li className="hover:text-white cursor-pointer">Menu</li>
+                <li className="hover:text-white cursor-pointer">Offers</li>
+              </Link>
               <li className="hover:text-white cursor-pointer">Contact Us</li>
             </ul>
           </div>
@@ -48,19 +55,50 @@ const Footer = () => {
           {/* Social */}
           <div>
             <h4 className="text-white font-semibold mb-3">Follow Us</h4>
+
             <div className="flex gap-4 mt-2">
-              <span className="p-2 bg-[#2b2b2b] rounded-full hover:bg-[#ff5200] cursor-pointer">
-                <FaFacebookF />
-              </span>
-              <span className="p-2 bg-[#2b2b2b] rounded-full hover:bg-[#ff5200] cursor-pointer">
+              {/* Gmail */}
+              <a
+                href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+                className="p-2 bg-[#2b2b2b] rounded-full hover:bg-[#ff5200] hover:scale-110 transition cursor-pointer text-white"
+                aria-label="Gmail"
+                title="Email us"
+              >
+                <MdEmail />
+              </a>
+
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com/wohh.nitish"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-[#2b2b2b] rounded-full hover:bg-[#ff5200] hover:scale-110 transition cursor-pointer text-white"
+                aria-label="Instagram"
+              >
                 <FaInstagram />
-              </span>
-              <span className="p-2 bg-[#2b2b2b] rounded-full hover:bg-[#ff5200] cursor-pointer">
+              </a>
+
+              {/* Twitter */}
+              <a
+                href="https://twitter.com/code_Bharti07"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-[#2b2b2b] rounded-full hover:bg-[#ff5200] hover:scale-110 transition cursor-pointer text-white"
+                aria-label="Twitter"
+              >
                 <FaTwitter />
-              </span>
-              <span className="p-2 bg-[#2b2b2b] rounded-full hover:bg-[#ff5200] cursor-pointer">
-                <FaYoutube />
-              </span>
+              </a>
+
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/nitish-kumar-631a37359"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-[#2b2b2b] rounded-full hover:bg-[#ff5200] hover:scale-110 transition cursor-pointer text-white"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedinIn />
+              </a>
             </div>
           </div>
         </div>

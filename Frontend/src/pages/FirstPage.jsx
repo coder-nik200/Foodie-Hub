@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 export default function FirstPage() {
   return (
@@ -28,7 +29,7 @@ export default function FirstPage() {
           </p>
 
           <button className="bg-white text-black px-8 py-3 rounded-full font-semibold transition">
-            Order Now
+            <Link to={"/cart"}>Order Now</Link>
           </button>
         </div>
 
