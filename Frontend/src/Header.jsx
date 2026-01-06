@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "./useContext";
 import api from "./api/axios";
 import {
@@ -19,6 +19,12 @@ export default function Header() {
     localStorage.getItem("theme") === "dark"
   );
   const [showMenu, setShowMenu] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [suggestions, setSuggestions] = useState([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+  const searchRef = useRef(null);
 
   useEffect(() => {
     if (darkMode) {
@@ -29,6 +35,107 @@ export default function Header() {
       localStorage.setItem("theme", "light");
     }
   }, [darkMode]);
+
+  // Handle search input
+  const handleSearchInput = async (value) => {
+    setSearchQuery(value);
+
+    if (!value.trim()) {
+      setSuggestions([]);
+      setShowSuggestions(false);
+      return;
+    }
+
+    setLoading(true);
+    try {
+      // Fetch all products from ALL endpoints
+      const [hitsRes, sweetsRes, drinksRes, foodOptionsRes] = await Promise.all(
+        [
+          api
+            .get("/foods/view-all-hits")
+            .catch(() => ({ data: { products: [] } })),
+          api.get("/foods/sweet").catch(() => ({ data: { products: [] } })),
+          api.get("/foods/drinks").catch(() => ({ data: { products: [] } })),
+          api.get("/foods/food-options").catch(() => ({ data: { data: [] } })),
+        ]
+      );
+
+      const hits = hitsRes.data.products || [];
+      const sweets = sweetsRes.data.products || [];
+      const drinks = drinksRes.data.products || [];
+      const foodOptions = foodOptionsRes.data.data || [];
+
+      const searchLower = value.toLowerCase();
+      const allProducts = [
+        ...hits.map((p) => ({ ...p, type: "hits" })),
+        ...sweets.map((p) => ({ ...p, type: "sweet" })),
+        ...drinks.map((p) => ({ ...p, type: "drinks" })),
+        ...foodOptions.map((p) => ({ ...p, type: "options" })),
+      ];
+
+      // Filter products that match search query
+      const filtered = allProducts
+        .filter(
+          (product) =>
+            product.name.toLowerCase().includes(searchLower) ||
+            product.usp?.toLowerCase().includes(searchLower) ||
+            product.uspDescription?.toLowerCase().includes(searchLower) ||
+            product.category?.toLowerCase().includes(searchLower) ||
+            product.slug?.toLowerCase().includes(searchLower)
+        )
+        .slice(0, 6); // Limit to 6 suggestions
+
+      setSuggestions(filtered);
+      setShowSuggestions(true);
+    } catch (error) {
+      console.error("Search error:", error);
+      setSuggestions([]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Handle suggestion click
+  const handleSuggestionClick = (product) => {
+    let link;
+    if (product.type === "sweet") {
+      link = `/foods/sweet/${product.variantId || product.id}`;
+    } else if (product.type === "drinks") {
+      link = `/foods/drinks/${product.variantId || product.id}`;
+    } else if (product.type === "options") {
+      link = `/foods/category/${product.id}`;
+    } else {
+      link = `/foods/view-all-hits/${product.variantId || product.id}`;
+    }
+
+    setSearchQuery("");
+    setSuggestions([]);
+    setShowSuggestions(false);
+    navigate(link);
+  };
+
+  // Handle search submission
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      navigate(`/search?q=${encodeURIComponent(searchQuery)}`);
+      setSearchQuery("");
+      setSuggestions([]);
+      setShowSuggestions(false);
+    }
+  };
+
+  // Close suggestions when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (searchRef.current && !searchRef.current.contains(event.target)) {
+        setShowSuggestions(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md dark:shadow-gray-800 transition">
@@ -47,13 +154,83 @@ export default function Header() {
         </div> */}
 
         {/* SEARCH */}
-        <div className="flex-1 max-w-xl relative">
-          <input
-            type="text"
-            placeholder="Search for food, restaurants..."
-            className="w-full border border-gray-300 dark:border-gray-700 rounded-full py-3 pl-12 pr-4 bg-white dark:bg-white-800 text-gray-900 dark:text-black focus:outline-none focus:ring-2 focus:ring-[#ff5200]"
-          />
-          <IoSearch className="absolute left-4 top-3.5 text-xl " />
+        <div className="flex-1 max-w-2xl relative" ref={searchRef}>
+          <form onSubmit={handleSearchSubmit} className="relative">
+            <input
+              type="text"
+              placeholder="Search for food, restaurants..."
+              value={searchQuery}
+              onChange={(e) => handleSearchInput(e.target.value)}
+              onFocus={() => searchQuery && setShowSuggestions(true)}
+              className="w-full border border-gray-300 dark:border-gray-700 rounded-full py-3 pl-12 pr-4 bg-white dark:bg-white-800 text-gray-900 dark:text-black focus:outline-none focus:ring-2 focus:ring-[#ff5200]"
+            />
+            <button
+              type="submit"
+              className="absolute left-4 top-3.5 text-xl hover:cursor-pointer"
+            >
+              <IoSearch />
+            </button>
+          </form>
+
+          {/* Suggestions Dropdown */}
+          {showSuggestions && (
+            <div className="absolute top-full left-0 right-0 mt-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg z-50 max-h-96 overflow-y-auto">
+              {loading && (
+                <div className="px-4 py-3 text-center bg-white text-gray-600 dark:text-gray-400">
+                  Searching...
+                </div>
+              )}
+
+              {!loading && suggestions.length === 0 && searchQuery && (
+                <div className="px-4 py-3 text-center bg-white text-gray-600 dark:text-gray-400">
+                  No results found
+                </div>
+              )}
+
+              {!loading &&
+                suggestions.map((product, idx) => (
+                  <div
+                    key={`${product.type}-${product.variantId || product.id}-${idx}`}
+                    onClick={() => handleSuggestionClick(product)}
+                    className="border-b bg-white text-black border-black dark:border-gray-700 last:border-b-0 hover:bg-gray-100 dark:hover:bg-gray-700 transition cursor-pointer"
+                  >
+                    <div className="flex items-center gap-3 p-3">
+                      {/* Product Image */}
+                      <img
+                        src={
+                          product.photoURL || product.image || product.photoUrl
+                        }
+                        alt={product.name}
+                        className="w-12 h-12 object-cover rounded"
+                      />
+
+                      {/* Product Details */}
+                      <div className="flex-1 min-w-0 force-light">
+                        <h4 className="font-semibold text-gray-900 dark:text-white truncate">
+                          {product.name}
+                        </h4>
+                        <p className="text-sm text-gray-600 dark:text-gray-400 truncate">
+                          {product.usp || product.uspDescription || ""}
+                        </p>
+                        <span className="text-xs bg-orange-100 dark:bg-orange-600 text-orange-600 dark:text-orange-200 px-2 py-0.5 rounded inline-block mt-1">
+                          {product.category || product.type}
+                        </span>
+                      </div>
+
+                      {/* Price */}
+                      <div className="text-right flex-shrink-0">
+                        <p className="font-bold text-green-600 dark:text-green-400">
+                          ₹
+                          {product.price?.discountedPrice ||
+                            product.discountedPrice ||
+                            "N/A"}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+            </div>
+          )}
         </div>
 
         {/* ACTIONS */}

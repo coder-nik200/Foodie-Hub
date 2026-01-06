@@ -1,14 +1,24 @@
 @import "tailwindcss";
 
+Light mode (default) body {
+  background-color: white;
+  color: #1f2937;
+}
+
 /* Global dark-mode overrides for when `html` has the `dark` class */
+html.dark {
+  background-color: #0b1220;
+  color: #e6eef8;
+}
+
 html.dark body {
-	background-color: #0b1220; /* dark page background */
-	color: #e6eef8; /* light text */
+  background-color: #0b1220; /* dark page background */
+  color: #e6eef8; /* light text */
 }
 
 /* Make common white cards and containers dark */
 html.dark .bg-white {
-	background-color: #0f1724 !important;
+  background-color: #0f1724 !important;
 }
 
 /* Adjust common gray text colors to be visible on dark background */
@@ -16,31 +26,41 @@ html.dark .text-gray-700,
 html.dark .text-gray-600,
 html.dark .text-gray-500,
 html.dark .text-gray-400 {
-	color: #cbd5e1 !important;
+  color: #cbd5e1 !important;
 }
 
 /* Adjust borders */
 html.dark .border-gray-300,
 html.dark .border-gray-400,
 html.dark .border-gray-500 {
-	border-color: #334155 !important;
+  border-color: #334155 !important;
 }
 
 /* Inputs */
 html.dark input,
 html.dark textarea,
 html.dark .rounded-full {
-	background-color: #0b1220 !important;
-	color: #e6eef8 !important;
-	border-color: #334155 !important;
+  background-color: #0b1220 !important;
+  color: #e6eef8 !important;
+  border-color: #334155 !important;
 }
 
 /* Buttons with orange hover may need contrast tweaks */
 html.dark .bg-orange-500 {
-	background-color: #ff6b1a !important;
+  background-color: #ff6b1a !important;
 }
 
 /* Ensure badges and small UI elements remain readable */
 html.dark .bg-[#ff5200] {
-	background-color: #ff6b1a !important;
+  background-color: #ff6b1a !important;
+}
+
+.force-light h4,
+.force-light p,
+.force-light span {
+  color: #000000 !important;
+}
+
+html.dark .text-gray-900 {
+  color: #ffffff !important;
 }
