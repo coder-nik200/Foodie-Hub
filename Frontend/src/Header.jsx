@@ -40,11 +40,11 @@ export default function Header() {
         </Link>
 
         {/* LOCATION */}
-        <div className="hidden md:flex items-center gap-2 text-gray-700 dark:text-black-300 cursor-pointer">
+        {/* <div className="hidden md:flex items-center gap-2 text-gray-700 dark:text-black-300 cursor-pointer">
           <IoLocationOutline className="text-xl text-[#ff5200]" />
           <span className="font-medium">Deliver to</span>
           <span className="font-semibold">Home</span>
-        </div>
+        </div> */}
 
         {/* SEARCH */}
         <div className="flex-1 max-w-xl relative">
