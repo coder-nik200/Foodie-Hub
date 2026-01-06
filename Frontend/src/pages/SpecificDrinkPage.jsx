@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useParams, Link } from "react-router-dom";
 import api from "../api/axios";
 import { UserContext } from "../useContext";
+import toast from "react-hot-toast";
 
 // Helper function to display stars
 const renderStars = (ratingValue) => {
@@ -136,6 +137,7 @@ export default function SpecificDrinkPage() {
           <button
             onClick={() => {
               addToCart(drinks);
+              toast.success(`✅ ${drinks.name} added to cart!`);
               navigate("/cart");
             }}
             className="mt-6 px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600"

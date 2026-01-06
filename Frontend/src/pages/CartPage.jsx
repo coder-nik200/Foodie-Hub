@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { UserContext } from "../useContext";
 import { Link, useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 export default function CartPage() {
   const { cart, removeFromCart } = useContext(UserContext);
@@ -90,7 +91,11 @@ export default function CartPage() {
 
       <div className="mt-6 text-right">
         <div className="text-xl">Total: ₹{total}</div>
-        <button className="mt-4 px-6 py-3 bg-green-600 text-white rounded">
+        <button 
+          onClick={() => {
+            toast.success("✅ Order placed successfully! Thank you for shopping with us!");
+          }}
+          className="mt-4 px-6 py-3 bg-green-600 text-white rounded">
           Proceed to Checkout
         </button>
       </div>

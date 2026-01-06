@@ -3,6 +3,7 @@ import { useSearchParams, Link, useNavigate } from "react-router-dom";
 import api from "../api/axios";
 import { UserContext } from "../useContext";
 import { IoArrowBack } from "react-icons/io5";
+import toast from "react-hot-toast";
 
 // Helper function to display stars
 const renderStars = (ratingValue) => {
@@ -209,6 +210,7 @@ export default function SearchPage() {
                       onClick={(e) => {
                         e.preventDefault();
                         addToCart(product);
+                        toast.success(`✅ ${product.name} added to cart!`);
                         navigate("/cart");
                       }}
                       className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg transition"
