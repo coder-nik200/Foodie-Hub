@@ -48,7 +48,7 @@ export default function CartPage() {
     );
 
   return (
-    <div className="min-h-screen p-10 max-w-4xl mx-auto">
+    <div className="min-h-screen px-4 py-6 md:p-10 max-w-4xl mx-auto">
       <h1 className="text-3xl font-bold mb-6">Your Cart</h1>
       <div className="space-y-4">
         {cart.map((item) => (
@@ -91,11 +91,14 @@ export default function CartPage() {
 
       <div className="mt-6 text-right">
         <div className="text-xl">Total: ₹{total}</div>
-        <button 
+        <button
           onClick={() => {
-            toast.success("✅ Order placed successfully! Thank you for shopping with us!");
+            toast.success(
+              "✅ Order placed successfully! Thank you for shopping with us!"
+            );
           }}
-          className="mt-4 px-6 py-3 bg-green-600 text-white rounded">
+          className="mt-4 px-6 py-3 bg-green-600 text-white rounded"
+        >
           Proceed to Checkout
         </button>
       </div>

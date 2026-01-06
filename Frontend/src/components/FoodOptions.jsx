@@ -32,7 +32,7 @@ export default function FoodOptions() {
   }, []);
 
   return (
-    <div className="w-full h-screen px-8 py-10 flex flex-col">
+    <div className="w-full px-8 py-10 flex flex-col">
       <h2 className="text-3xl font-bold mb-10 text-center">
         Fast Food Options
       </h2>

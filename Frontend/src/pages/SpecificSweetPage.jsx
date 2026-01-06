@@ -72,7 +72,7 @@ export default function SpecificSweetPage() {
   );
 
   return (
-    <div className="min-h-screen p-10 max-w-6xl mx-auto">
+    <div className="min-h-screen px-4 py-6 md:p-10 max-w-6xl mx-auto">
       {/* SWEET DETAILS */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <img

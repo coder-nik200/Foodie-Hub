@@ -4,8 +4,8 @@ import api from "../api/axios";
 import { UserContext } from "../useContext";
 import toast from "react-hot-toast";
 
-// Helper function to display stars
-const renderStars = (ratingValue) => {
+/* ⭐ Helper: rating stars */
+const renderStars = (ratingValue = 0) => {
   const fullStars = Math.floor(ratingValue);
   const halfStar = ratingValue - fullStars >= 0.5;
   const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
@@ -28,33 +28,28 @@ export default function ViewAllHitsPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Scroll to top whenever the food id changes
     window.scrollTo({ top: 0, behavior: "smooth" });
 
-    // Try to get selected food from view-all-hits first, then sweets, then drinks
     api
       .get(`/foods/view-all-hits/${id}`)
       .then((res) => setFood(res.data.product))
-      .catch(() => {
-        // Try sweets endpoint
+      .catch(() =>
         api
           .get(`/foods/sweet/${id}`)
           .then((res) => setFood(res.data.product))
-          .catch(() => {
-            // Try drinks endpoint
+          .catch(() =>
             api
               .get(`/foods/drinks/${id}`)
               .then((res) => setFood(res.data.product))
               .catch((err) =>
                 setError(err.response?.data?.message || "Something went wrong")
-              );
-          });
-      });
+              )
+          )
+      );
 
-    // Get all foods for recommendations and full menu
     api
       .get("/foods/view-all-hits")
-      .then((res) => setAllFoods(res.data.products))
+      .then((res) => setAllFoods(res.data.products || []))
       .catch(() => {});
   }, [id]);
 
@@ -73,20 +68,23 @@ export default function ViewAllHitsPage() {
   );
 
   return (
-    <div className="min-h-screen p-10 max-w-6xl mx-auto">
+    <div className="min-h-screen px-3 sm:px-6 md:px-10 py-6 max-w-6xl mx-auto">
       {/* FOOD DETAILS */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
         <img
           src={food.photoURL}
           alt={food.name}
-          className="w-full max-w-md rounded-xl shadow-lg mx-auto"
+          className="w-full max-w-sm sm:max-w-md mx-auto rounded-xl shadow-lg"
         />
 
         <div>
-          <h1 className="text-4xl font-bold">{food.name}</h1>
-          <p className="text-gray-600 mt-2">{food.usp}</p>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+            {food.name}
+          </h1>
 
-          <div className="mt-4 space-y-2">
+          <p className="text-gray-600 mt-2 text-sm sm:text-base">{food.usp}</p>
+
+          <div className="mt-4 space-y-1 text-sm sm:text-base">
             <p>
               <strong>Category:</strong> {food.category}
             </p>
@@ -99,12 +97,11 @@ export default function ViewAllHitsPage() {
             <p>
               <strong>Serves:</strong> {food.serves}
             </p>
+
             <p>
               <strong>Rating:</strong>{" "}
               <span className="text-yellow-500">
-                {food.rating
-                  ? renderStars(food.rating.value)
-                  : renderStars(0)}
+                {renderStars(food.rating?.value)}
               </span>{" "}
               {food.rating
                 ? `(${food.rating.value} / 5, ${food.rating.reviews} reviews)`
@@ -113,32 +110,19 @@ export default function ViewAllHitsPage() {
           </div>
 
           {/* PRICE */}
-          <div className="mt-6">
-            {food.price ? (
-              <>
-                <span className="text-3xl font-bold text-green-600">
-                  ₹{food.price.discountedPrice}
-                </span>
-                <span className="line-through text-gray-500 ml-3">
-                  ₹{food.price.mrp}
-                </span>
-                <span className="ml-3 text-red-500 font-semibold">
-                  ({food.price.discountPercent}% OFF)
-                </span>
-              </>
-            ) : (
-              <>
-                <span className="text-3xl font-bold text-green-600">
-                  ₹{food.discountedPrice ?? 0}
-                </span>
-                <span className="line-through text-gray-500 ml-3">
-                  ₹{food.basePrice ?? 0}
-                </span>
-                <span className="ml-3 text-red-500 font-semibold">
-                  ({food.discountPercentage ?? 0}% OFF)
-                </span>
-              </>
-            )}
+          <div className="mt-5">
+            <span className="text-2xl sm:text-3xl font-bold text-green-600">
+              ₹{food.price?.discountedPrice ?? food.discountedPrice ?? 0}
+            </span>
+
+            <span className="line-through text-gray-500 ml-3">
+              ₹{food.price?.mrp ?? food.basePrice ?? 0}
+            </span>
+
+            <span className="ml-3 text-red-500 font-semibold">
+              ({food.price?.discountPercent ?? food.discountPercentage ?? 0}%
+              OFF)
+            </span>
           </div>
 
           <button
@@ -147,7 +131,7 @@ export default function ViewAllHitsPage() {
               toast.success(`✅ ${food.name} added to cart!`);
               navigate("/cart");
             }}
-            className="mt-6 px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600"
+            className="mt-6 w-full sm:w-auto px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition"
           >
             Add to Cart
           </button>
@@ -156,12 +140,12 @@ export default function ViewAllHitsPage() {
 
       {/* RECOMMENDATIONS */}
       {recommendations.length > 0 && (
-        <div className="mt-16">
-          <h2 className="text-3xl font-bold mb-6">
+        <div className="mt-14">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6">
             Recommended {food.category}
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {recommendations.map((item) => (
               <Link
                 to={`/foods/view-all-hits/${item.variantId}`}
@@ -171,15 +155,19 @@ export default function ViewAllHitsPage() {
                 <img
                   src={item.photoURL}
                   alt={item.name}
-                  className="h-40 w-full object-cover rounded-lg"
+                  className="h-36 sm:h-40 w-full object-cover rounded-lg"
                 />
-                <h3 className="mt-3 font-semibold">{item.name}</h3>
-                <p className="text-sm text-gray-600">{item.usp}</p>
-                <p className="mt-1 text-yellow-500">
-                  {renderStars(item.rating.value)} ({item.rating.value})
+                <h3 className="mt-3 font-semibold text-sm sm:text-base">
+                  {item.name}
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-600 line-clamp-2">
+                  {item.usp}
+                </p>
+                <p className="mt-1 text-yellow-500 text-sm">
+                  {renderStars(item.rating?.value)} ({item.rating?.value || 0})
                 </p>
                 <p className="mt-2 font-bold text-green-600">
-                  ₹{item.price.discountedPrice}
+                  ₹{item.price?.discountedPrice || 0}
                 </p>
               </Link>
             ))}
@@ -189,10 +177,12 @@ export default function ViewAllHitsPage() {
 
       {/* FULL MENU */}
       {otherFoods.length > 0 && (
-        <div className="mt-16">
-          <h2 className="text-3xl font-bold mb-6">All Foods</h2>
+        <div className="mt-14">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6">
+            All Foods
+          </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {otherFoods.map((item) => (
               <Link
                 to={`/foods/view-all-hits/${item.variantId}`}
@@ -202,15 +192,19 @@ export default function ViewAllHitsPage() {
                 <img
                   src={item.photoURL}
                   alt={item.name}
-                  className="h-40 w-full object-cover rounded-lg"
+                  className="h-36 sm:h-40 w-full object-cover rounded-lg"
                 />
-                <h3 className="mt-3 font-semibold">{item.name}</h3>
-                <p className="text-sm text-gray-600">{item.usp}</p>
-                <p className="mt-1 text-yellow-500">
-                  {renderStars(item.rating.value)} ({item.rating.value})
+                <h3 className="mt-3 font-semibold text-sm sm:text-base">
+                  {item.name}
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-600 line-clamp-2">
+                  {item.usp}
+                </p>
+                <p className="mt-1 text-yellow-500 text-sm">
+                  {renderStars(item.rating?.value)} ({item.rating?.value || 0})
                 </p>
                 <p className="mt-2 font-bold text-green-600">
-                  ₹{item.price.discountedPrice}
+                  ₹{item.price?.discountedPrice || 0}
                 </p>
               </Link>
             ))}
