@@ -1,4 +1,4 @@
-import FirstPage from "../pages/firstPage";
+import FirstPage from "../pages/FirstPage";
 import FoodOptions from "./FoodOptions";
 import SweetData from "./SweetData";
 import ViewAllHits from "./ViewAllHits";
