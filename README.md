@@ -40,4 +40,4 @@ Foodie Hub is a modern, responsive food ordering and discovery web application d
 
 ## Connect with me
 
-<p align="center">🔗 LinkedIn: <a href="https://www.linkedin.com/in/nitish-kumar-631a37359" target="_blank">Nitish Kumar Bharti</a> Email: codesnippet17@gmail.com</p>
+<p align="center">🔗 LinkedIn: <a href="https://www.linkedin.com/in/nitish-kumar-bharti-631a37359/" target="_blank">Nitish Kumar Bharti</a> Email: codesnippet17@gmail.com</p>
