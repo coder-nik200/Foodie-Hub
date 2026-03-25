@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "variantId": "69937b6407603f96897d4519",
+      "name": "Mango Lassi",
+      "image": "https://b.zmtcdn.com/data/dish_photos/4ff/7e92e177eb64b857c7651e40fd3cd4ff.jpg",
+      "uspDescription": "Rich, creamy yogurt blended with sweet mangoes",
+      "weight": "300 ml",
+      "pieces": "1 bottle",
+      "serves": "1",
+      "basePrice": 120,
+      "discountedPrice": 99,
+      "discountPercentage": 18,
+      "rating": {
+        "value": 4.6,
+        "reviews": 95
+      }
+    },
+    {
+      "variantId": "69937b6407603f96897d451a",
+      "name": "Cold Coffee",
+      "image": "https://b.zmtcdn.com/data/dish_photos/79d/28ce00688861423b99ac813b0cd6979d.jpg?output-format=webp",
+      "uspDescription": "Smooth chilled coffee blended with milk & ice",
+      "weight": "350 ml",
+      "pieces": "1 cup",
+      "serves": "1",
+      "basePrice": 150,
+      "discountedPrice": 119,
+      "discountPercentage": 21,
+      "rating": {
+        "value": 4.5,
+        "reviews": 120
+      }
+    },
+    {
+      "variantId": "69937b6407603f96897d451b",
+      "name": "Blue Lagoon Mojito",
+      "image": "https://imgs.search.brave.com/3zHs0d4QTcIupdx-5iXGhQeC8SwQwY34ySt5lTFzxGw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9iZXlv/bmQtY2F0ZXJpbmct/Ym91dGlxdWUub2Rv/by5jb20vd2ViL2lt/YWdlL3Byb2R1Y3Qu/cHJvZHVjdC8xOTEv/aW1hZ2VfMTAyNC9N/b2ppdG8lMjBCbHVl/JTIwbGFnb29uP3Vu/aXF1ZT02NThmMWFl",
+      "uspDescription": "Refreshing citrus drink with a cool blue twist",
+      "weight": "300 ml",
+      "pieces": "1 glass",
+      "serves": "1",
+      "basePrice": 180,
+      "discountedPrice": 149,
+      "discountPercentage": 17,
+      "rating": {
+        "value": 4.4,
+        "reviews": 80
+      }
+    },
+    {
+      "variantId": "69937b6407603f96897d451c",
+      "name": "Strawberry Milkshake",
+      "image": "https://b.zmtcdn.com/data/dish_photos/d9c/5725613d444dcbdc429ea4f90fd27d9c.jpg",
+      "uspDescription": "Thick milkshake made with real strawberries",
+      "weight": "400 ml",
+      "pieces": "1 bottle",
+      "serves": "1",
+      "basePrice": 170,
+      "discountedPrice": 139,
+      "discountPercentage": 18,
+      "rating": {
+        "value": 4.6,
+        "reviews": 110
+      }
+    },
+    {
+      "variantId": "69937b6407603f96897d451d",
+      "name": "Fresh Lime Soda",
+      "image": "https://b.zmtcdn.com/data/dish_photos/5e5/35aa7bfc9fbd797ca8ee6282b848b5e5.jpg?output-format=webp",
+      "uspDescription": "Classic lime soda for instant refreshment",
+      "weight": "300 ml",
+      "pieces": "1 glass",
+      "serves": "1",
+      "basePrice": 90,
+      "discountedPrice": 79,
+      "discountPercentage": 12,
+      "rating": {
+        "value": 4.3,
+        "reviews": 70
+      }
+    },
+    {
+      "variantId": "69937b6407603f96897d451e",
+      "name": "Chocolate Thick Shake",
+      "image": "https://b.zmtcdn.com/data/dish_photos/740/2b809ba4751e1ae9398dff2d18967740.jpg",
+      "uspDescription": "Rich & creamy chocolate shake topped with cocoa",
+      "weight": "400 ml",
+      "pieces": "1 bottle",
+      "serves": "1",
+      "basePrice": 190,
+      "discountedPrice": 159,
+      "discountPercentage": 16,
+      "rating": {
+        "value": 4.7,
+        "reviews": 140
+      }
+    }
+  ]
+}

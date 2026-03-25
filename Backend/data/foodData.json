@@ -1,0 +1,2590 @@
+{
+  "categories": [
+    { "id": 1, "name": "Burger" },
+    { "id": 2, "name": "Pizza" },
+    { "id": 3, "name": "French Fries" },
+    { "id": 4, "name": "Sandwich" },
+    { "id": 5, "name": "Chicken" },
+    { "id": 6, "name": "Tacos" },
+    { "id": 7, "name": "Wrap" },
+    { "id": 8, "name": "Donut" },
+    { "id": 9, "name": "Spring Roll" },
+    { "id": 10, "name": "Pav Bhaji" },
+    { "id": 11, "name": "Chowmein" },
+    { "id": 12, "name": "Milkshake" },
+    { "id": 13, "name": "Vada Pav" },
+    { "id": 14, "name": "Samosa" },
+    { "id": 15, "name": "Momos" },
+    { "id": 16, "name": "Pasta" },
+    { "id": 17, "name": "Burrito" },
+    { "id": 18, "name": "Nuggets" },
+    { "id": 19, "name": "Fried Chicken" },
+    { "id": 20, "name": "Hot Dog" },
+    { "id": 21, "name": "Sweet" },
+    { "id": 22, "name": "Beverages" }
+  ],
+
+  "products": [
+    {
+      "id": "696fc163ba31e68e0a7a03b7",
+      "name": "Classic Veg Burger",
+      "categoryId": 1,
+      "slug": "classic-veg-burger",
+      "category": "Burger",
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349",
+      "description": "Delicious Classic Veg Burger",
+      "weight": "180g",
+      "pieces": "1 pc",
+      "serves": "1",
+      "price": {
+        "originalPrice": 99,
+        "discountedPrice": 89,
+        "discountPercent": 10
+      },
+      "rating": { "value": 4.2 }
+    },
+    {
+      "id": "696fc163ba31e68e0a7a03b8",
+      "name": "Cheese Burger",
+      "categoryId": 1,
+      "slug": "cheese-burger",
+      "category": "Burger",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd",
+      "description": "Delicious Cheese Burger",
+      "weight": "200g",
+      "pieces": "1 pc",
+      "serves": "1",
+      "price": {
+        "originalPrice": 129,
+        "discountedPrice": 116,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03b9",
+      "name": "Double Patty Burger",
+      "categoryId": 1,
+      "slug": "double-patty-burger",
+      "category": "Burger",
+      "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433b",
+      "description": "Delicious Double Patty Burger",
+      "weight": "260g",
+      "pieces": "1 pc",
+      "serves": "1",
+      "price": {
+        "originalPrice": 179,
+        "discountedPrice": 161,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03ba",
+      "name": "Chicken Burger",
+      "categoryId": 1,
+      "slug": "chicken-burger",
+      "category": "Burger",
+      "image": "https://images.unsplash.com/photo-1606755962773-d324e0a13086",
+      "description": "Delicious Chicken Burger",
+      "weight": "220g",
+      "pieces": "1 pc",
+      "serves": "1",
+      "price": {
+        "originalPrice": 159,
+        "discountedPrice": 143,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.4 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03bb",
+      "name": "Spicy Burger",
+      "categoryId": 1,
+      "slug": "spicy-burger",
+      "category": "Burger",
+      "image": "https://b.zmtcdn.com/data/dish_photos/99c/e2bad70e6cc1896fcb96d58285ecb99c.jpg",
+      "description": "Delicious Spicy Burger",
+      "weight": "190g",
+      "pieces": "1 pc",
+      "serves": "1",
+      "price": {
+        "originalPrice": 149,
+        "discountedPrice": 134,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.1 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03bc",
+      "name": "Loaded Burger",
+      "categoryId": 1,
+      "slug": "loaded-burger",
+      "category": "Burger",
+      "image": "https://images.unsplash.com/photo-1598182198871-d3f4ab4fd181",
+      "description": "Delicious Loaded Burger",
+      "weight": "300g",
+      "pieces": "1 pc",
+      "serves": "1",
+      "price": {
+        "originalPrice": 199,
+        "discountedPrice": 179,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.7 }
+    },
+
+    {
+      "id": "696fc164ba31e68e0a7a03bd",
+      "name": "Margherita Pizza",
+      "categoryId": 2,
+      "slug": "margherita-pizza",
+      "category": "Pizza",
+      "image": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3",
+      "description": "Delicious Margherita Pizza",
+      "weight": "8 inch | 350g",
+      "pieces": "1 pc",
+      "serves": "1",
+      "price": {
+        "originalPrice": 199,
+        "discountedPrice": 179,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.3 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03be",
+      "name": "Farmhouse Pizza",
+      "categoryId": 2,
+      "slug": "farmhouse-pizza",
+      "category": "Pizza",
+      "image": "https://b.zmtcdn.com/data/dish_photos/68d/f7ef8df0fed856ee03c983f156fbb68d.jpg",
+      "description": "Delicious Farmhouse Pizza",
+      "weight": "9 inch | 420g",
+      "pieces": "1 pc",
+      "serves": "1",
+      "price": {
+        "originalPrice": 249,
+        "discountedPrice": 224,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03bf",
+      "name": "Cheese Burst Pizza",
+      "categoryId": 2,
+      "slug": "cheese-burst-pizza",
+      "category": "Pizza",
+      "image": "https://b.zmtcdn.com/data/dish_photos/0b1/4178546b550b317147f95af2f7d670b1.jpg",
+      "description": "Delicious Cheese Burst Pizza",
+      "weight": "9 inch | 450g",
+      "pieces": "1 pc",
+      "serves": "1",
+      "price": {
+        "originalPrice": 279,
+        "discountedPrice": 251,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03c0",
+      "name": "Pepperoni Pizza",
+      "categoryId": 2,
+      "slug": "pepperoni-pizza",
+      "category": "Pizza",
+      "image": "https://b.zmtcdn.com/data/dish_photos/acf/6fcacb7afcf32dbfcff875d7edb1facf.png",
+      "description": "Delicious Pepperoni Pizza",
+      "weight": "10 inch | 480g",
+      "pieces": "1 pc",
+      "serves": "1",
+      "price": {
+        "originalPrice": 299,
+        "discountedPrice": 269,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.7 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03c1",
+      "name": "BBQ Chicken Pizza",
+      "categoryId": 2,
+      "slug": "bbq-chicken-pizza",
+      "category": "Pizza",
+      "image": "https://images.unsplash.com/photo-1590947132387-155cc02f3212",
+      "description": "Delicious BBQ Chicken Pizza",
+      "weight": "10 inch | 500g",
+      "pieces": "1 pc",
+      "serves": "1",
+      "price": {
+        "originalPrice": 329,
+        "discountedPrice": 296,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03c2",
+      "name": "Paneer Tikka Pizza",
+      "categoryId": 2,
+      "slug": "paneer-tikka-pizza",
+      "category": "Pizza",
+      "image": "https://b.zmtcdn.com/data/dish_photos/0cb/affa9f524a1ce605d04ec273a1d4f0cb.jpg",
+      "description": "Delicious Paneer Tikka Pizza",
+      "weight": "9 inch | 430g",
+      "pieces": "1 pc",
+      "serves": "1",
+      "price": {
+        "originalPrice": 289,
+        "discountedPrice": 260,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.4 }
+    },
+
+    {
+      "id": "696fc164ba31e68e0a7a03c3",
+      "name": "Classic Salted Fries",
+      "categoryId": 3,
+      "slug": "classic-salted-fries",
+      "category": "French Fries",
+      "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877",
+      "description": "Delicious Classic Salted Fries",
+      "weight": "250g",
+      "pieces": "1 pack",
+      "serves": "1",
+      "price": {
+        "originalPrice": 79,
+        "discountedPrice": 71,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.1 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03c4",
+      "name": "Peri Peri Fries",
+      "categoryId": 3,
+      "slug": "peri-peri-fries",
+      "category": "French Fries",
+      "image": "https://b.zmtcdn.com/data/dish_photos/da5/cc1bcda816f203d8091ec8c084d4bda5.jpg?output-format=webp",
+      "description": "Delicious Peri Peri Fries",
+      "weight": "350g",
+      "pieces": "1 pack",
+      "serves": "1",
+      "price": {
+        "originalPrice": 99,
+        "discountedPrice": 89,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.4 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03c5",
+      "name": "Cheese Fries",
+      "categoryId": 3,
+      "slug": "cheese-fries",
+      "category": "French Fries",
+      "image": "https://b.zmtcdn.com/data/dish_photos/b9c/6c48ee0ad7fe32ac9727838d764b6b9c.jpg",
+      "description": "Delicious Cheese Fries",
+      "weight": "100g",
+      "pieces": "1 pack",
+      "serves": "1",
+      "price": {
+        "originalPrice": 129,
+        "discountedPrice": 116,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03c6",
+      "name": "Loaded Fries",
+      "categoryId": 3,
+      "slug": "loaded-fries",
+      "category": "French Fries",
+      "image": "https://b.zmtcdn.com/data/dish_photos/4c4/2ef514cc6f4314404babcc0b048144c4.jpg",
+      "description": "Delicious Loaded Fries",
+      "weight": "250g",
+      "pieces": "1 pack",
+      "serves": "1",
+      "price": {
+        "originalPrice": 149,
+        "discountedPrice": 134,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03c7",
+      "name": "Garlic Fries",
+      "categoryId": 3,
+      "slug": "garlic-fries",
+      "category": "French Fries",
+      "image": "https://b.zmtcdn.com/data/dish_photos/f0d/281c121516a678b5d9353758219a2f0d.jpg?output-format=webp",
+      "description": "Delicious Garlic Fries",
+      "weight": "75g",
+      "pieces": "1 pack",
+      "serves": "1",
+      "price": {
+        "originalPrice": 119,
+        "discountedPrice": 107,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.3 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03c8",
+      "name": "Crinkle Cut Fries",
+      "categoryId": 3,
+      "slug": "crinkle-cut-fries",
+      "category": "French Fries",
+      "image": "https://b.zmtcdn.com/data/dish_photos/c1f/6d405ba8fcc6530b7481564ca06dfc1f.jpg",
+      "description": "Delicious Crinkle Cut Fries",
+      "weight": "50g",
+      "pieces": "1 pack",
+      "serves": "1",
+      "price": {
+        "originalPrice": 109,
+        "discountedPrice": 98,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.2 }
+    },
+
+    {
+      "id": "696fc164ba31e68e0a7a03c9",
+      "name": "Veg Sandwich",
+      "slug": "veg-sandwich",
+      "categoryId": 4,
+      "category": "Sandwich",
+      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af",
+      "description": "Fresh and tasty Veg Sandwich",
+      "weight": "250g",
+      "pieces": "1 piece",
+      "serves": "1",
+      "price": {
+        "originalPrice": 89,
+        "discountedPrice": 80,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.1 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03ca",
+      "name": "Grilled Cheese Sandwich",
+      "slug": "grilled-cheese-sandwich",
+      "categoryId": 4,
+      "category": "Sandwich",
+      "image": "https://images.unsplash.com/photo-1619096252214-ef06c45683e3",
+      "description": "Cheesy and perfectly grilled sandwich",
+      "weight": "270g",
+      "pieces": "1 piece",
+      "serves": "1",
+      "price": {
+        "originalPrice": 119,
+        "discountedPrice": 107,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.4 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03cb",
+      "name": "Club Sandwich",
+      "slug": "club-sandwich",
+      "categoryId": 4,
+      "category": "Sandwich",
+      "image": "https://b.zmtcdn.com/data/dish_photos/6fa/98e7ac6be56fd29670321084ada896fa.jpg?output-format=webp",
+      "description": "Classic triple-layer club sandwich",
+      "weight": "300g",
+      "pieces": "1 piece",
+      "serves": "1",
+      "price": {
+        "originalPrice": 149,
+        "discountedPrice": 134,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03cc",
+      "name": "Chicken Sandwich",
+      "slug": "chicken-sandwich",
+      "categoryId": 4,
+      "category": "Sandwich",
+      "image": "https://images.unsplash.com/photo-1553909489-cd47e0907980",
+      "description": "Juicy chicken-filled sandwich",
+      "weight": "280g",
+      "pieces": "1 piece",
+      "serves": "1",
+      "price": {
+        "originalPrice": 159,
+        "discountedPrice": 143,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.3 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03cd",
+      "name": "Paneer Sandwich",
+      "slug": "paneer-sandwich",
+      "categoryId": 4,
+      "category": "Sandwich",
+      "image": "https://b.zmtcdn.com/data/dish_photos/810/c0cc6ff8fd082a8b89cf74f8ba478810.jpg",
+      "description": "Soft paneer stuffed sandwich",
+      "weight": "270g",
+      "pieces": "1 piece",
+      "serves": "1",
+      "price": {
+        "originalPrice": 139,
+        "discountedPrice": 125,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.2 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03ce",
+      "name": "Corn Sandwich",
+      "slug": "corn-sandwich",
+      "categoryId": 4,
+      "category": "Sandwich",
+      "image": "https://b.zmtcdn.com/data/dish_photos/3eb/61ae3dc580f48ca3aa7f9bcfc29bc3eb.jpg",
+      "description": "Sweet corn loaded sandwich",
+      "weight": "260g",
+      "pieces": "1 piece",
+      "serves": "1",
+      "price": {
+        "originalPrice": 129,
+        "discountedPrice": 116,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.0 }
+    },
+
+    {
+      "id": "696fc164ba31e68e0a7a03cf",
+      "name": "Classic Crispy Chicken Wings",
+      "slug": "classic-crispy-chicken-wings",
+      "categoryId": 5,
+      "category": "Chicken",
+      "image": "https://images.unsplash.com/photo-1606756790138-261d2b21cd75?auto=format&fit=crop&w=600&q=80",
+      "description": "Perfectly crispy classic chicken wings",
+      "weight": "300g",
+      "pieces": "6 pieces",
+      "serves": "1-2",
+      "price": {
+        "originalPrice": 199,
+        "discountedPrice": 179,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.3 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03d0",
+      "name": "Spicy Hot Chicken Wings",
+      "slug": "spicy-hot-chicken-wings",
+      "categoryId": 5,
+      "category": "Chicken",
+      "image": "https://b.zmtcdn.com/data/dish_photos/0f2/45521e565c782611804dbb800cd420f2.jpeg?output-format=webp",
+      "description": "Hot and fiery chicken wings",
+      "weight": "320g",
+      "pieces": "6 pieces",
+      "serves": "1-2",
+      "price": {
+        "originalPrice": 219,
+        "discountedPrice": 197,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03d1",
+      "name": "BBQ Chicken Wings",
+      "slug": "bbq-chicken-wings",
+      "categoryId": 5,
+      "category": "Chicken",
+      "image": "https://b.zmtcdn.com/data/dish_photos/a65/96b70bc733b35bb49cef23c160156a65.jpg?output-format=webp",
+      "description": "Smoky BBQ glazed chicken wings",
+      "weight": "330g",
+      "pieces": "6 pieces",
+      "serves": "1-2",
+      "price": {
+        "originalPrice": 229,
+        "discountedPrice": 206,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03d2",
+      "name": "Garlic Butter Chicken Wings",
+      "slug": "garlic-butter-chicken-wings",
+      "categoryId": 5,
+      "category": "Chicken",
+      "image": "https://b.zmtcdn.com/data/dish_photos/827/ab8abd41e9ef950d46bafac3e822e827.jpg",
+      "description": "Rich garlic butter flavored wings",
+      "weight": "330g",
+      "pieces": "6 pieces",
+      "serves": "1-2",
+      "price": {
+        "originalPrice": 239,
+        "discountedPrice": 215,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.4 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03d3",
+      "name": "Honey Glazed Chicken Wings",
+      "slug": "honey-glazed-chicken-wings",
+      "categoryId": 5,
+      "category": "Chicken",
+      "image": "https://b.zmtcdn.com/data/dish_photos/da9/34067319534335d71b5f2b10a6b62da9.jpg",
+      "description": "Sweet and sticky honey glazed wings",
+      "weight": "340g",
+      "pieces": "6 pieces",
+      "serves": "1-2",
+      "price": {
+        "originalPrice": 249,
+        "discountedPrice": 224,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.7 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03d4",
+      "name": "Peri Peri Chicken Wings",
+      "slug": "peri-peri-chicken-wings",
+      "categoryId": 5,
+      "category": "Chicken",
+      "image": "https://b.zmtcdn.com/data/dish_photos/ba4/4ba40fd5c357fc3ddb566559aef65ba4.jpg",
+      "description": "Spicy peri peri seasoned wings",
+      "weight": "340g",
+      "pieces": "6 pieces",
+      "serves": "1-2",
+      "price": {
+        "originalPrice": 259,
+        "discountedPrice": 233,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6 }
+    },
+
+    {
+      "id": "696fc164ba31e68e0a7a03d5",
+      "name": "Veg Taco",
+      "slug": "veg-taco",
+      "categoryId": 6,
+      "category": "Tacos",
+      "image": "https://b.zmtcdn.com/data/pictures/1/20944891/c4f72e93602930504a679aa5f9a1c845_o2_featured_v2.jpg?output-format=webp",
+      "description": "Fresh veggie loaded taco",
+      "weight": "200g",
+      "pieces": "2 pieces",
+      "serves": "1",
+      "price": {
+        "originalPrice": 99,
+        "discountedPrice": 89,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.2 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03d6",
+      "name": "Chicken Taco",
+      "slug": "chicken-taco",
+      "categoryId": 6,
+      "category": "Tacos",
+      "image": "https://b.zmtcdn.com/data/dish_photos/88f/2f8703e8d5c0280091dc7d75dcbb888f.jpg?output-format=webp",
+      "description": "Juicy chicken filled taco",
+      "weight": "220g",
+      "pieces": "2 pieces",
+      "serves": "1",
+      "price": {
+        "originalPrice": 129,
+        "discountedPrice": 116,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.4 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03d7",
+      "name": "Cheese Taco",
+      "slug": "cheese-taco",
+      "categoryId": 6,
+      "category": "Tacos",
+      "image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85",
+      "description": "Cheesy and creamy taco",
+      "weight": "210g",
+      "pieces": "2 pieces",
+      "serves": "1",
+      "price": {
+        "originalPrice": 119,
+        "discountedPrice": 107,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.1 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03d8",
+      "name": "Spicy Taco",
+      "slug": "spicy-taco",
+      "categoryId": 6,
+      "category": "Tacos",
+      "image": "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c",
+      "description": "Hot and spicy taco delight",
+      "weight": "220g",
+      "pieces": "2 pieces",
+      "serves": "1",
+      "price": {
+        "originalPrice": 139,
+        "discountedPrice": 125,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.3 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03d9",
+      "name": "Loaded Taco",
+      "slug": "loaded-taco",
+      "categoryId": 6,
+      "category": "Tacos",
+      "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b",
+      "description": "Fully loaded Mexican-style taco",
+      "weight": "240g",
+      "pieces": "2 pieces",
+      "serves": "1",
+      "price": {
+        "originalPrice": 159,
+        "discountedPrice": 143,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03da",
+      "name": "Mexican Taco",
+      "slug": "mexican-taco",
+      "categoryId": 6,
+      "category": "Tacos",
+      "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe",
+      "description": "Authentic Mexican flavored taco",
+      "weight": "230g",
+      "pieces": "2 pieces",
+      "serves": "1",
+      "price": {
+        "originalPrice": 149,
+        "discountedPrice": 134,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6 }
+    },
+
+    {
+      "id": "696fc164ba31e68e0a7a03db",
+      "name": "Veg Wrap",
+      "slug": "veg-wrap",
+      "categoryId": 7,
+      "category": "Wraps",
+      "image": "https://b.zmtcdn.com/data/dish_photos/cf1/7d6f3444724a97c9c2fe41ebb798acf1.jpg?output-format=webp",
+      "description": "Fresh and healthy veggie wrap",
+      "weight": "200g",
+      "pieces": "1 wrap",
+      "serves": "1",
+      "price": {
+        "originalPrice": 99,
+        "discountedPrice": 89,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.1 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03dc",
+      "name": "Paneer Wrap",
+      "slug": "paneer-wrap",
+      "categoryId": 7,
+      "category": "Wraps",
+      "image": "https://b.zmtcdn.com/data/dish_photos/5e7/d636ade04e02306132a962b108e515e7.jpg",
+      "description": "Grilled paneer wrap with veggies",
+      "weight": "220g",
+      "pieces": "1 wrap",
+      "serves": "1",
+      "price": {
+        "originalPrice": 129,
+        "discountedPrice": 116,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.4 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03dd",
+      "name": "Chicken Wrap",
+      "slug": "chicken-wrap",
+      "categoryId": 7,
+      "category": "Wraps",
+      "image": "https://b.zmtcdn.com/data/dish_photos/f06/9ebcf21697e3d1c61aa2da13bf66bf06.jpg",
+      "description": "Juicy chicken with fresh veggies",
+      "weight": "230g",
+      "pieces": "1 wrap",
+      "serves": "1",
+      "price": {
+        "originalPrice": 149,
+        "discountedPrice": 134,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03de",
+      "name": "Cheese Wrap",
+      "slug": "cheese-wrap",
+      "categoryId": 7,
+      "category": "Wraps",
+      "image": "https://b.zmtcdn.com/data/dish_photos/b1d/a5611297ee3475f13e4e977c141b1b1d.jpg",
+      "description": "Cheesy goodness in a wrap",
+      "weight": "220g",
+      "pieces": "1 wrap",
+      "serves": "1",
+      "price": {
+        "originalPrice": 119,
+        "discountedPrice": 107,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.2 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03df",
+      "name": "Spicy Wrap",
+      "slug": "spicy-wrap",
+      "categoryId": 7,
+      "category": "Wraps",
+      "image": "https://b.zmtcdn.com/data/dish_photos/581/35c9bf785280b7384f65a1275801f581.jpeg?output-format=webp",
+      "description": "Hot and spicy wrap",
+      "weight": "220g",
+      "pieces": "1 wrap",
+      "serves": "1",
+      "price": {
+        "originalPrice": 139,
+        "discountedPrice": 125,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.3 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03e0",
+      "name": "Loaded Wrap",
+      "slug": "loaded-wrap",
+      "categoryId": 7,
+      "category": "Wraps",
+      "image": "https://b.zmtcdn.com/data/dish_photos/5bd/f3f0687b7488440ceb55ecda60e865bd.jpg?output-format=webp",
+      "description": "Fully loaded with chicken, cheese & veggies",
+      "weight": "250g",
+      "pieces": "1 wrap",
+      "serves": "1",
+      "price": {
+        "originalPrice": 159,
+        "discountedPrice": 143,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6 }
+    },
+
+    {
+      "id": "696fc164ba31e68e0a7a03e1",
+      "name": "Chocolate Donut",
+      "slug": "chocolate-donut",
+      "categoryId": 8,
+      "category": "Donuts",
+      "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b",
+      "description": "Rich chocolate flavored donut",
+      "weight": "80g",
+      "pieces": "1 donut",
+      "serves": "1",
+      "price": {
+        "originalPrice": 59,
+        "discountedPrice": 53,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.4 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03e2",
+      "name": "Strawberry Donut",
+      "slug": "strawberry-donut",
+      "categoryId": 8,
+      "category": "Donuts",
+      "image": "https://b.zmtcdn.com/data/dish_photos/285/2b22b271620734e62526b0d9f8cd1285.png?output-format=webp",
+      "description": "Sweet strawberry flavored donut",
+      "weight": "80g",
+      "pieces": "1 donut",
+      "serves": "1",
+      "price": {
+        "originalPrice": 69,
+        "discountedPrice": 62,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.3 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03e3",
+      "name": "Glazed Donut",
+      "slug": "glazed-donut",
+      "categoryId": 8,
+      "category": "Donuts",
+      "image": "https://b.zmtcdn.com/data/dish_photos/037/43db2e55a70bfe8ecc9a4792617a3037.png?output-format=webp",
+      "description": "Classic glazed donut",
+      "weight": "80g",
+      "pieces": "1 donut",
+      "serves": "1",
+      "price": {
+        "originalPrice": 49,
+        "discountedPrice": 44,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.2 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03e4",
+      "name": "Vanilla Donut",
+      "slug": "vanilla-donut",
+      "categoryId": 8,
+      "category": "Donuts",
+      "image": "https://b.zmtcdn.com/data/dish_photos/31b/413974e1687c78f7bf9a8f083ba2831b.jpg?output-format=webp",
+      "description": "Soft vanilla flavored donut",
+      "weight": "80g",
+      "pieces": "1 donut",
+      "serves": "1",
+      "price": {
+        "originalPrice": 55,
+        "discountedPrice": 50,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.1 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03e5",
+      "name": "Sprinkle Donut",
+      "slug": "sprinkle-donut",
+      "categoryId": 8,
+      "category": "Donuts",
+      "image": "https://b.zmtcdn.com/data/dish_photos/574/bce84cf539fa65947de0b8dea7116574.jpeg?output-format=webp",
+      "description": "Colorful sprinkle topped donut",
+      "weight": "80g",
+      "pieces": "1 donut",
+      "serves": "1",
+      "price": {
+        "originalPrice": 65,
+        "discountedPrice": 59,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03e6",
+      "name": "Caramel Donut",
+      "slug": "caramel-donut",
+      "categoryId": 8,
+      "category": "Donuts",
+      "image": "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3",
+      "description": "Sweet caramel flavored donut",
+      "weight": "80g",
+      "pieces": "1 donut",
+      "serves": "1",
+      "price": {
+        "originalPrice": 75,
+        "discountedPrice": 68,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6 }
+    },
+
+    {
+      "id": "696fc164ba31e68e0a7a03e7",
+      "name": "Veg Spring Roll",
+      "slug": "veg-spring-roll",
+      "categoryId": 9,
+      "category": "Spring Rolls",
+      "image": "https://b.zmtcdn.com/data/dish_photos/411/ee606b6327e50c3bb316496214b2a411.jpg?output-format=webp",
+      "description": "Crispy and fresh veg spring roll",
+      "weight": "100g",
+      "pieces": "2 rolls",
+      "serves": "1",
+      "price": {
+        "originalPrice": 99,
+        "discountedPrice": 89,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.2 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03e8",
+      "name": "Cheese Spring Roll",
+      "slug": "cheese-spring-roll",
+      "categoryId": 9,
+      "category": "Spring Rolls",
+      "image": "https://b.zmtcdn.com/data/dish_photos/f79/e0a65e8a5ef32c987608927a8f4bef79.jpg?output-format=webp",
+      "description": "Cheesy delight in crispy roll",
+      "weight": "100g",
+      "pieces": "2 rolls",
+      "serves": "1",
+      "price": {
+        "originalPrice": 119,
+        "discountedPrice": 107,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.4 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03e9",
+      "name": "Paneer Spring Roll",
+      "slug": "paneer-spring-roll",
+      "categoryId": 9,
+      "category": "Spring Rolls",
+      "image": "https://b.zmtcdn.com/data/dish_photos/7be/787c9375b169ee4f4f937a0accf177be.jpg",
+      "description": "Paneer stuffed crispy roll",
+      "weight": "100g",
+      "pieces": "2 rolls",
+      "serves": "1",
+      "price": {
+        "originalPrice": 129,
+        "discountedPrice": 116,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03ea",
+      "name": "Chicken Spring Roll",
+      "slug": "chicken-spring-roll",
+      "categoryId": 9,
+      "category": "Spring Rolls",
+      "image": "https://b.zmtcdn.com/data/dish_photos/1ef/025cc6a9f22f8549bb3a3da4056931ef.jpg",
+      "description": "Tender chicken in crispy roll",
+      "weight": "100g",
+      "pieces": "2 rolls",
+      "serves": "1",
+      "price": {
+        "originalPrice": 149,
+        "discountedPrice": 134,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03eb",
+      "name": "Spicy Spring Roll",
+      "slug": "spicy-spring-roll",
+      "categoryId": 9,
+      "category": "Spring Rolls",
+      "image": "https://b.zmtcdn.com/data/dish_photos/926/0b425ee4dbf1db2360735e7f154b8926.png",
+      "description": "Hot and spicy spring roll",
+      "weight": "100g",
+      "pieces": "2 rolls",
+      "serves": "1",
+      "price": {
+        "originalPrice": 139,
+        "discountedPrice": 125,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.3 }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03ec",
+      "name": "Crispy Golden Spring Roll",
+      "slug": "crispy-golden-spring-roll",
+      "categoryId": 9,
+      "category": "Spring Rolls",
+      "image": "https://b.zmtcdn.com/data/dish_photos/3f8/cd9c97622d5fc78310a6bc6352af63f8.jpg",
+      "description": "Golden crispy spring rolls",
+      "weight": "100g",
+      "pieces": "2 rolls",
+      "serves": "1",
+      "price": {
+        "originalPrice": 159,
+        "discountedPrice": 143,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.7 }
+    },
+
+    {
+      "id": "696fc164ba31e68e0a7a03ed",
+      "name": "Butter Pav Bhaji",
+      "slug": "butter-pav-bhaji",
+      "categoryId": 10,
+      "category": "Pav Bhaji",
+      "image": "https://b.zmtcdn.com/data/pictures/8/19641428/1c371b7bfdad6c48d6a09ecd7cdc03bc_o2_featured_v2.jpg?output-format=webp",
+      "description": "Classic buttered pav with rich bhaji",
+      "weight": "250g",
+      "pieces": "1 plate",
+      "serves": "1",
+      "price": {
+        "originalPrice": 149,
+        "discountedPrice": 134,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": 4.6
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03ee",
+      "name": "Cheese Pav Bhaji",
+      "slug": "cheese-pav-bhaji",
+      "categoryId": 10,
+      "category": "Pav Bhaji",
+      "image": "https://b.zmtcdn.com/data/dish_photos/970/61a77933630d6e428c31571b6ef3c970.jpg",
+      "description": "Cheesy twist to classic pav bhaji",
+      "weight": "250g",
+      "pieces": "1 plate",
+      "serves": "1",
+      "price": {
+        "originalPrice": 169,
+        "discountedPrice": 152,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": 4.5
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03ef",
+      "name": "Jain Pav Bhaji",
+      "slug": "jain-pav-bhaji",
+      "categoryId": 10,
+      "category": "Pav Bhaji",
+      "image": "https://b.zmtcdn.com/data/pictures/6/21175156/15c733b1bc7a766ec2b7636ade8e9756_o2_featured_v2.jpg",
+      "description": "Jain style pav bhaji without onions and garlic",
+      "weight": "250g",
+      "pieces": "1 plate",
+      "serves": "1",
+      "price": {
+        "originalPrice": 139,
+        "discountedPrice": 125,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": 4.2
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03f0",
+      "name": "Spicy Pav Bhaji",
+      "slug": "spicy-pav-bhaji",
+      "categoryId": 10,
+      "category": "Pav Bhaji",
+      "image": "https://b.zmtcdn.com/data/dish_photos/251/32b9896d08b53a818ff2a1f1c5a10251.jpg",
+      "description": "Hot and spicy pav bhaji for spice lovers",
+      "weight": "250g",
+      "pieces": "1 plate",
+      "serves": "1",
+      "price": {
+        "originalPrice": 159,
+        "discountedPrice": 143,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": 4.4
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03f1",
+      "name": "Paneer Pav Bhaji",
+      "slug": "paneer-pav-bhaji",
+      "categoryId": 10,
+      "category": "Pav Bhaji",
+      "image": "https://b.zmtcdn.com/data/dish_photos/6a1/9e815311445da403f63885a5b584d6a1.jpg?output-format=webp",
+      "description": "Paneer cubes in rich pav bhaji",
+      "weight": "250g",
+      "pieces": "1 plate",
+      "serves": "1",
+      "price": {
+        "originalPrice": 179,
+        "discountedPrice": 161,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": 4.7
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03f2",
+      "name": "Special Pav Bhaji",
+      "slug": "special-pav-bhaji",
+      "categoryId": 10,
+      "category": "Pav Bhaji",
+      "image": "https://b.zmtcdn.com/data/dish_photos/faa/9778b89601cd0be45d320eec058d5faa.jpg?output-format=webp",
+      "description": "Special pav bhaji with extra toppings",
+      "weight": "250g",
+      "pieces": "1 plate",
+      "serves": "1",
+      "price": {
+        "originalPrice": 199,
+        "discountedPrice": 179,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": 4.8
+    },
+
+    {
+      "id": "696fc164ba31e68e0a7a03f3",
+      "name": "Veg Chowmein",
+      "slug": "veg-chowmein",
+      "categoryId": 11,
+      "category": "Chowmein & Noodles",
+      "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246",
+      "description": "Delicious veg chowmein with fresh vegetables",
+      "weight": "250g",
+      "pieces": "1 plate",
+      "serves": "1",
+      "price": {
+        "originalPrice": 119,
+        "discountedPrice": 109,
+        "discountPercent": 8
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.2, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03f4",
+      "name": "Chicken Chowmein",
+      "slug": "chicken-chowmein",
+      "categoryId": 11,
+      "category": "Chowmein & Noodles",
+      "image": "https://b.zmtcdn.com/data/dish_photos/939/6cfa3071a1b98077649c97c21e139939.jpg",
+      "description": "Spicy chicken chowmein with soft noodles",
+      "weight": "250g",
+      "pieces": "1 plate",
+      "serves": "1",
+      "price": {
+        "originalPrice": 149,
+        "discountedPrice": 139,
+        "discountPercent": 7
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03f5",
+      "name": "Hakka Noodles",
+      "slug": "hakka-noodles",
+      "categoryId": 11,
+      "category": "Chowmein & Noodles",
+      "image": "https://b.zmtcdn.com/data/dish_photos/3d4/815fee5664cd1e8925fb4ffde5dc43d4.jpg",
+      "description": "Classic hakka noodles with fresh veggies",
+      "weight": "250g",
+      "pieces": "1 plate",
+      "serves": "1",
+      "price": {
+        "originalPrice": 129,
+        "discountedPrice": 119,
+        "discountPercent": 8
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.3, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03f6",
+      "name": "Schezwan Noodles",
+      "slug": "schezwan-noodles",
+      "categoryId": 11,
+      "category": "Chowmein & Noodles",
+      "image": "https://b.zmtcdn.com/data/dish_photos/a81/21e3f0658cefcdbae363bfaecc210a81.jpg",
+      "description": "Hot and spicy Schezwan noodles",
+      "weight": "250g",
+      "pieces": "1 plate",
+      "serves": "1",
+      "price": {
+        "originalPrice": 139,
+        "discountedPrice": 129,
+        "discountPercent": 7
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.4, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03f7",
+      "name": "Paneer Chowmein",
+      "slug": "paneer-chowmein",
+      "categoryId": 11,
+      "category": "Chowmein & Noodles",
+      "image": "https://b.zmtcdn.com/data/dish_photos/9c2/070f3b631ae0324dd7f83919d12649c2.jpg",
+      "description": "Paneer cubes with delicious chowmein noodles",
+      "weight": "250g",
+      "pieces": "1 plate",
+      "serves": "1",
+      "price": {
+        "originalPrice": 149,
+        "discountedPrice": 139,
+        "discountPercent": 7
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03f8",
+      "name": "Mixed Chowmein",
+      "slug": "mixed-chowmein",
+      "categoryId": 11,
+      "category": "Chowmein & Noodles",
+      "image": "https://b.zmtcdn.com/data/dish_photos/4c5/fa158b4c6e193d99ea9a35dcd467f4c5.jpg?output-format=webp",
+      "description": "Mixed veggies and meat in chowmein noodles",
+      "weight": "250g",
+      "pieces": "1 plate",
+      "serves": "1",
+      "price": {
+        "originalPrice": 159,
+        "discountedPrice": 149,
+        "discountPercent": 6
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6, "reviews": null }
+    },
+
+    {
+      "id": "696fc164ba31e68e0a7a03f9",
+      "name": "Chocolate Milkshake",
+      "slug": "chocolate-milkshake",
+      "categoryId": 12,
+      "category": "Milkshakes & Beverages",
+      "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699",
+      "description": "Rich and creamy chocolate milkshake",
+      "weight": "300ml",
+      "pieces": "1 glass",
+      "serves": "1",
+      "price": {
+        "originalPrice": 129,
+        "discountedPrice": 119,
+        "discountPercent": 8
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03fa",
+      "name": "Vanilla Milkshake",
+      "slug": "vanilla-milkshake",
+      "categoryId": 12,
+      "category": "Milkshakes & Beverages",
+      "image": "https://b.zmtcdn.com/data/dish_photos/ab4/0711ef3ec4eb25ead97975312fd32ab4.jpg",
+      "description": "Classic vanilla milkshake with creamy taste",
+      "weight": "300ml",
+      "pieces": "1 glass",
+      "serves": "1",
+      "price": {
+        "originalPrice": 119,
+        "discountedPrice": 109,
+        "discountPercent": 8
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.3, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03fb",
+      "name": "Strawberry Milkshake",
+      "slug": "strawberry-milkshake",
+      "categoryId": 12,
+      "category": "Milkshakes & Beverages",
+      "image": "https://b.zmtcdn.com/data/dish_photos/214/f72e9160a0c3afd8187a5f8262ce3214.jpg",
+      "description": "Fresh strawberry milkshake with sweet flavor",
+      "weight": "300ml",
+      "pieces": "1 glass",
+      "serves": "1",
+      "price": {
+        "originalPrice": 139,
+        "discountedPrice": 129,
+        "discountPercent": 7
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.4, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03fc",
+      "name": "Oreo Milkshake",
+      "slug": "oreo-milkshake",
+      "categoryId": 12,
+      "category": "Milkshakes & Beverages",
+      "image": "https://b.zmtcdn.com/data/dish_photos/91d/b8562114a8d3cf17ada988b76cb6a91d.jpg?output-format=webp",
+      "description": "Oreo blended milkshake with chocolate crunch",
+      "weight": "300ml",
+      "pieces": "1 glass",
+      "serves": "1",
+      "price": {
+        "originalPrice": 149,
+        "discountedPrice": 139,
+        "discountPercent": 7
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03fd",
+      "name": "Mango Milkshake",
+      "slug": "mango-milkshake",
+      "categoryId": 12,
+      "category": "Milkshakes & Beverages",
+      "image": "https://b.zmtcdn.com/data/dish_photos/bf6/33ec01b3c253cd2b767ffb102086ebf6.jpg",
+      "description": "Sweet and tropical mango milkshake",
+      "weight": "300ml",
+      "pieces": "1 glass",
+      "serves": "1",
+      "price": {
+        "originalPrice": 129,
+        "discountedPrice": 119,
+        "discountPercent": 8
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.2, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a03fe",
+      "name": "KitKat Milkshake",
+      "slug": "kitkat-milkshake",
+      "categoryId": 12,
+      "category": "Milkshakes & Beverages",
+      "image": "https://b.zmtcdn.com/data/dish_photos/ffa/bca333b487d4bb2f4484dd6df1e2affa.png",
+      "description": "KitKat blended milkshake with chocolate pieces",
+      "weight": "300ml",
+      "pieces": "1 glass",
+      "serves": "1",
+      "price": {
+        "originalPrice": 159,
+        "discountedPrice": 149,
+        "discountPercent": 6
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.7, "reviews": null }
+    },
+
+    {
+      "id": "696fc164ba31e68e0a7a03ff",
+      "name": "Classic Vada Pav",
+      "slug": "classic-vada-pav",
+      "categoryId": 13,
+      "category": "Vada Pav",
+      "image": "https://b.zmtcdn.com/data/dish_photos/69f/35aa5b11faeb3c5fae17f0b81cae669f.jpg?output-format=webp",
+      "description": "Crispy and classic vada pav",
+      "weight": "100g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 39,
+        "discountedPrice": 35,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.4, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0400",
+      "name": "Butter Vada Pav",
+      "slug": "butter-vada-pav",
+      "categoryId": 13,
+      "category": "Vada Pav",
+      "image": "https://b.zmtcdn.com/data/dish_photos/df5/e019cf2006e8cc2364c009bacf8a6df5.jpg?output-format=webp",
+      "description": "Soft vada pav with butter spread",
+      "weight": "100g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 49,
+        "discountedPrice": 44,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0401",
+      "name": "Cheese Vada Pav",
+      "slug": "cheese-vada-pav",
+      "categoryId": 13,
+      "category": "Vada Pav",
+      "image": "https://b.zmtcdn.com/data/dish_photos/544/55daa759bbcea291f7f53df6632df544.jpg",
+      "description": "Cheesy delight vada pav",
+      "weight": "100g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 59,
+        "discountedPrice": 53,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0402",
+      "name": "Spicy Vada Pav",
+      "slug": "spicy-vada-pav",
+      "categoryId": 13,
+      "category": "Vada Pav",
+      "image": "https://b.zmtcdn.com/data/dish_photos/af1/28cf868affecc745b3af3ff70c1c8af1.jpeg",
+      "description": "Spicy and flavorful vada pav",
+      "weight": "100g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 45,
+        "discountedPrice": 40,
+        "discountPercent": 11
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.3, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0403",
+      "name": "Garlic Vada Pav",
+      "slug": "garlic-vada-pav",
+      "categoryId": 13,
+      "category": "Vada Pav",
+      "image": "https://b.zmtcdn.com/data/pictures/4/21536524/d965f9aa4737faab035393fb40313f86_o2_featured_v2.jpg?output-format=webp",
+      "description": "Garlic flavored vada pav",
+      "weight": "100g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 55,
+        "discountedPrice": 50,
+        "discountPercent": 9
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.4, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0404",
+      "name": "Special Vada Pav",
+      "slug": "special-vada-pav",
+      "categoryId": 13,
+      "category": "Vada Pav",
+      "image": "https://b.zmtcdn.com/data/pictures/2/22076992/9ccd70da375b4edfb7ec05e7ed44f5ab_o2_featured_v2.jpg",
+      "description": "Special vada pav with extra fillings",
+      "weight": "120g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 69,
+        "discountedPrice": 62,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.7, "reviews": null }
+    },
+
+    {
+      "id": "696fc164ba31e68e0a7a0405",
+      "name": "Classic Samosa",
+      "slug": "classic-samosa",
+      "categoryId": 14,
+      "category": "Samosa",
+      "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950",
+      "description": "Crispy and classic samosa",
+      "weight": "50g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 25,
+        "discountedPrice": 22,
+        "discountPercent": 12
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.3, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0406",
+      "name": "Paneer Samosa",
+      "slug": "paneer-samosa",
+      "categoryId": 14,
+      "category": "Samosa",
+      "image": "https://b.zmtcdn.com/data/dish_photos/eab/1f9a8ca257b60d5bf9bf7f0b2ec62eab.jpg",
+      "description": "Paneer stuffed samosa",
+      "weight": "50g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 35,
+        "discountedPrice": 31,
+        "discountPercent": 11
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0407",
+      "name": "Cheese Samosa",
+      "slug": "cheese-samosa",
+      "categoryId": 14,
+      "category": "Samosa",
+      "image": "https://b.zmtcdn.com/data/dish_photos/0cc/dc4fc06df8bef5518448034d3a7560cc.jpeg",
+      "description": "Cheesy delight samosa",
+      "weight": "50g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 45,
+        "discountedPrice": 41,
+        "discountPercent": 9
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0408",
+      "name": "Aloo Samosa",
+      "slug": "aloo-samosa",
+      "categoryId": 14,
+      "category": "Samosa",
+      "image": "https://b.zmtcdn.com/data/dish_photos/0cc/dc4fc06df8bef5518448034d3a7560cc.jpeg",
+      "description": "Potato filled samosa",
+      "weight": "50g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 30,
+        "discountedPrice": 27,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.2, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0409",
+      "name": "Masala Samosa",
+      "slug": "masala-samosa",
+      "categoryId": 14,
+      "category": "Samosa",
+      "image": "https://b.zmtcdn.com/data/dish_photos/457/a8216721949427b65e376188a08a8457.jpg?output-format=webp",
+      "description": "Spicy masala samosa",
+      "weight": "50g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 40,
+        "discountedPrice": 36,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.4, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a040a",
+      "name": "Special Samosa",
+      "slug": "special-samosa",
+      "categoryId": 14,
+      "category": "Samosa",
+      "image": "https://b.zmtcdn.com/data/dish_photos/45c/a62c3921116f503ce1c518d5aa0f645c.jpg?output-format=webp",
+      "description": "Special filling samosa",
+      "weight": "60g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 55,
+        "discountedPrice": 50,
+        "discountPercent": 9
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.7, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a040b",
+      "name": "Veg Momos",
+      "slug": "veg-momos",
+      "categoryId": 15,
+      "category": "Momos",
+      "image": "https://b.zmtcdn.com/data/pictures/9/21599429/bc0e35a09be1a509e9f4320987ce9304_o2_featured_v2.jpg",
+      "description": "Steamed veg momos",
+      "weight": "100g",
+      "pieces": "6",
+      "serves": "1",
+      "price": {
+        "originalPrice": 99,
+        "discountedPrice": 89,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.4, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a040c",
+      "name": "Chicken Momos",
+      "slug": "chicken-momos",
+      "categoryId": 15,
+      "category": "Momos",
+      "image": "https://b.zmtcdn.com/data/dish_photos/f33/7ea917dbb6ec7e8ca0908e3801ecbf33.jpg",
+      "description": "Steamed chicken momos",
+      "weight": "100g",
+      "pieces": "6",
+      "serves": "1",
+      "price": {
+        "originalPrice": 129,
+        "discountedPrice": 116,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a040d",
+      "name": "Paneer Momos",
+      "slug": "paneer-momos",
+      "categoryId": 15,
+      "category": "Momos",
+      "image": "https://b.zmtcdn.com/data/dish_photos/e41/2f0342b01b624e894936f8b3c3230e41.jpg",
+      "description": "Paneer stuffed momos",
+      "weight": "100g",
+      "pieces": "6",
+      "serves": "1",
+      "price": {
+        "originalPrice": 119,
+        "discountedPrice": 107,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a040e",
+      "name": "Fried Momos",
+      "slug": "fried-momos",
+      "categoryId": 15,
+      "category": "Momos",
+      "image": "https://b.zmtcdn.com/data/pictures/5/19199695/17a8826552aed91e93a58d53c35a6350_o2_featured_v2.jpg",
+      "description": "Crispy fried momos",
+      "weight": "100g",
+      "pieces": "6",
+      "serves": "1",
+      "price": {
+        "originalPrice": 139,
+        "discountedPrice": 125,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a040f",
+      "name": "Tandoori Momos",
+      "slug": "tandoori-momos",
+      "categoryId": 15,
+      "category": "Momos",
+      "image": "https://b.zmtcdn.com/data/pictures/3/21652163/1703b99bdc9fa30c49404b90305d2f87_o2_featured_v2.jpg?output-format=webp",
+      "description": "Tandoori style momos",
+      "weight": "100g",
+      "pieces": "6",
+      "serves": "1",
+      "price": {
+        "originalPrice": 159,
+        "discountedPrice": 143,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.7, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0410",
+      "name": "Cheese Momos",
+      "slug": "cheese-momos",
+      "categoryId": 15,
+      "category": "Momos",
+      "image": "https://b.zmtcdn.com/data/pictures/1/21834871/593b8950d7dc6edc106430661a8a2707_o2_featured_v2.jpg?output-format=webp",
+      "description": "Cheese stuffed momos",
+      "weight": "100g",
+      "pieces": "6",
+      "serves": "1",
+      "price": {
+        "originalPrice": 149,
+        "discountedPrice": 134,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5, "reviews": null }
+    },
+
+    {
+      "id": "696fc164ba31e68e0a7a0411",
+      "name": "White Sauce Pasta",
+      "slug": "white-sauce-pasta",
+      "categoryId": 16,
+      "category": "Pasta",
+      "image": "https://b.zmtcdn.com/data/dish_photos/358/740a975c87cc5b82f7b98ce2d1461358.png",
+      "description": "Creamy white sauce pasta",
+      "weight": "250g",
+      "pieces": null,
+      "serves": "1",
+      "price": {
+        "originalPrice": 199,
+        "discountedPrice": 179,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0412",
+      "name": "Red Sauce Pasta",
+      "slug": "red-sauce-pasta",
+      "categoryId": 16,
+      "category": "Pasta",
+      "image": "https://b.zmtcdn.com/data/dish_photos/d35/dfc6b6fc483c39b6d846eda300ba0d35.jpg?output-format=webp",
+      "description": "Tangy red sauce pasta",
+      "weight": "250g",
+      "pieces": null,
+      "serves": "1",
+      "price": {
+        "originalPrice": 189,
+        "discountedPrice": 170,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.4, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0413",
+      "name": "Cheese Pasta",
+      "slug": "cheese-pasta",
+      "categoryId": 16,
+      "category": "Pasta",
+      "image": "https://b.zmtcdn.com/data/dish_photos/81d/04758497e9a2ef08a136f50ab46a581d.jpg",
+      "description": "Cheesy delight pasta",
+      "weight": "250g",
+      "pieces": null,
+      "serves": "1",
+      "price": {
+        "originalPrice": 219,
+        "discountedPrice": 197,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0414",
+      "name": "Penne Pasta",
+      "slug": "penne-pasta",
+      "categoryId": 16,
+      "category": "Pasta",
+      "image": "https://b.zmtcdn.com/data/dish_photos/e10/db1e919c843c5c0bdd07fc6ac66b7e10.jpg",
+      "description": "Classic penne pasta",
+      "weight": "250g",
+      "pieces": null,
+      "serves": "1",
+      "price": {
+        "originalPrice": 209,
+        "discountedPrice": 188,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.3, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0415",
+      "name": "Arrabiata Pasta",
+      "slug": "arrabiata-pasta",
+      "categoryId": 16,
+      "category": "Pasta",
+      "image": "https://b.zmtcdn.com/data/dish_photos/996/9e090da4570f345e6a524a571223b996.jpg",
+      "description": "Spicy Arrabiata pasta",
+      "weight": "250g",
+      "pieces": null,
+      "serves": "1",
+      "price": {
+        "originalPrice": 229,
+        "discountedPrice": 206,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0416",
+      "name": "Mix Sauce Pasta",
+      "slug": "mix-sauce-pasta",
+      "categoryId": 16,
+      "category": "Pasta",
+      "image": "https://b.zmtcdn.com/data/dish_photos/c5d/12006acf3ea775a251b738e9a1c6fc5d.jpg",
+      "description": "Combination of sauces pasta",
+      "weight": "250g",
+      "pieces": null,
+      "serves": "1",
+      "price": {
+        "originalPrice": 239,
+        "discountedPrice": 215,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.7, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0417",
+      "name": "Veg Burrito",
+      "slug": "veg-burrito",
+      "categoryId": 17,
+      "category": "Burrito",
+      "image": "https://imgs.search.brave.com/H66g29UReXOqYLmROn4SgFlnuQJgmEhz3gUTcCK3nX8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by93ZXQtYnVycml0/b18xOTgwNjctMTEw/MTc0LmpwZz9zZW10/PWFpc19oeWJyaWQm/dz03NDAmcT04MA",
+      "description": "Fresh veg burrito",
+      "weight": "200g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 149,
+        "discountedPrice": 134,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.2, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0418",
+      "name": "Chicken Burrito",
+      "slug": "chicken-burrito",
+      "categoryId": 17,
+      "category": "Burrito",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/12/5/39606110-7e52-4b20-8415-da063426a02a_8532f597-66a0-4dd3-84a1-3aab5a18f806.png",
+      "description": "Spicy chicken burrito",
+      "weight": "200g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 179,
+        "discountedPrice": 161,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0419",
+      "name": "Paneer Burrito",
+      "slug": "paneer-burrito",
+      "categoryId": 17,
+      "category": "Burrito",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/9/30/55934a95-5183-4a32-a5f9-40db6f0761a8_55a94ebf-aee0-46d0-9b49-888286f5af2e.jpg",
+      "description": "Paneer stuffed burrito",
+      "weight": "200g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 169,
+        "discountedPrice": 152,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.4, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a041a",
+      "name": "Cheese Burrito",
+      "slug": "cheese-burrito",
+      "categoryId": 17,
+      "category": "Burrito",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/12/11/76f56f0e-7b84-4d6d-be6c-c4f0ac5a3b35_8d6acc6d-94f6-430b-b99f-ea36451344ea.jpeg",
+      "description": "Cheesy burrito",
+      "weight": "200g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 159,
+        "discountedPrice": 143,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.3, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a041b",
+      "name": "Spicy Chicken Burrito",
+      "slug": "spicy-chicken-burrito",
+      "categoryId": 17,
+      "category": "Burrito",
+      "image": "https://b.zmtcdn.com/data/dish_photos/6bb/f3b6c4ef3ec7c9103ac772a23ed876bb.jpg?output-format=webp",
+      "description": "Hot and spicy chicken burrito",
+      "weight": "200g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 189,
+        "discountedPrice": 170,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a041c",
+      "name": "Mexican Burrito",
+      "slug": "mexican-burrito",
+      "categoryId": 17,
+      "category": "Burrito",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2025/11/19/8a7486a6-62e3-4f22-81cf-435a3fdeda40_0692a3ff-c5b7-4f31-877f-d15b1240fbe1.jpg_compressed",
+      "description": "Mexican style burrito",
+      "weight": "200g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 199,
+        "discountedPrice": 179,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6, "reviews": null }
+    },
+
+    {
+      "id": "696fc164ba31e68e0a7a041d",
+      "name": "Chicken Nuggets",
+      "slug": "chicken-nuggets",
+      "categoryId": 18,
+      "category": "Nuggets",
+      "image": "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&w=600&q=80",
+      "description": "Crispy chicken nuggets",
+      "weight": "150g",
+      "pieces": "6",
+      "serves": "1",
+      "price": {
+        "originalPrice": 129,
+        "discountedPrice": 116,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.3, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a041e",
+      "name": "Veg Nuggets",
+      "slug": "veg-nuggets",
+      "categoryId": 18,
+      "category": "Nuggets",
+      "image": "https://b.zmtcdn.com/data/dish_photos/01d/473506ac35e087d7cd04551e3d31501d.jpg?output-format=webp",
+      "description": "Crispy veg nuggets",
+      "weight": "150g",
+      "pieces": "6",
+      "serves": "1",
+      "price": {
+        "originalPrice": 109,
+        "discountedPrice": 98,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.1, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a041f",
+      "name": "Paneer Nuggets",
+      "slug": "paneer-nuggets",
+      "categoryId": 18,
+      "category": "Nuggets",
+      "image": "https://b.zmtcdn.com/data/dish_photos/941/aa9c808ca880db1f3de017aac5a05941.jpeg",
+      "description": "Paneer stuffed nuggets",
+      "weight": "150g",
+      "pieces": "6",
+      "serves": "1",
+      "price": {
+        "originalPrice": 119,
+        "discountedPrice": 107,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.2, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0420",
+      "name": "Cheese Nuggets",
+      "slug": "cheese-nuggets",
+      "categoryId": 18,
+      "category": "Nuggets",
+      "image": "https://b.zmtcdn.com/data/pictures/6/22047696/9cae42c4c0e0c128e59cee0478594c66_o2_featured_v2.jpg",
+      "description": "Cheese stuffed nuggets",
+      "weight": "150g",
+      "pieces": "6",
+      "serves": "1",
+      "price": {
+        "originalPrice": 139,
+        "discountedPrice": 125,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.3, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0421",
+      "name": "Spicy Nuggets",
+      "slug": "spicy-nuggets",
+      "categoryId": 18,
+      "category": "Nuggets",
+      "image": "https://b.zmtcdn.com/data/dish_photos/82e/17388874c03c0c116abc70638c46282e.jpg",
+      "description": "Hot & spicy nuggets",
+      "weight": "150g",
+      "pieces": "6",
+      "serves": "1",
+      "price": {
+        "originalPrice": 149,
+        "discountedPrice": 134,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.4, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0422",
+      "name": "BBQ Nuggets",
+      "slug": "bbq-nuggets",
+      "categoryId": 18,
+      "category": "Nuggets",
+      "image": "https://b.zmtcdn.com/data/dish_photos/c42/1961f767777b5bd22e08a03b1c456c42.jpeg?output-format=webp",
+      "description": "BBQ flavored nuggets",
+      "weight": "150g",
+      "pieces": "6",
+      "serves": "1",
+      "price": {
+        "originalPrice": 159,
+        "discountedPrice": 143,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0423",
+      "name": "Crispy Fried Chicken",
+      "slug": "crispy-fried-chicken",
+      "categoryId": 19,
+      "category": "Fried Chicken",
+      "image": "https://imgs.search.brave.com/XAX5d1Ejc5UPIvWohZ7MFrcpkcPu2UND7zlB2hSLUCQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMDEv/ODI2Lzk3OS9zbWFs/bC9jcmlzcHktZnJp/ZWQtY2hpY2tlbi1m/cmVlLXBob3RvLmpw/Zw",
+      "description": "Golden crispy chicken",
+      "weight": "250g",
+      "pieces": "4",
+      "serves": "1",
+      "price": {
+        "originalPrice": 199,
+        "discountedPrice": 179,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0424",
+      "name": "Spicy Fried Chicken",
+      "slug": "spicy-fried-chicken",
+      "categoryId": 19,
+      "category": "Fried Chicken",
+      "image": "https://b.zmtcdn.com/data/dish_photos/0f2/45521e565c782611804dbb800cd420f2.jpeg?output-format=webp",
+      "description": "Hot & spicy fried chicken",
+      "weight": "250g",
+      "pieces": "4",
+      "serves": "1",
+      "price": {
+        "originalPrice": 219,
+        "discountedPrice": 197,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0425",
+      "name": "BBQ Fried Chicken",
+      "slug": "bbq-fried-chicken",
+      "categoryId": 19,
+      "category": "Fried Chicken",
+      "image": "https://b.zmtcdn.com/data/dish_photos/7e3/5a5024101d1d8b5b99ac3701a12b67e3.jpg",
+      "description": "BBQ flavored fried chicken",
+      "weight": "250g",
+      "pieces": "4",
+      "serves": "1",
+      "price": {
+        "originalPrice": 229,
+        "discountedPrice": 206,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.7, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0426",
+      "name": "Honey Glazed Fried Chicken",
+      "slug": "honey-glazed-fried-chicken",
+      "categoryId": 19,
+      "category": "Fried Chicken",
+      "image": "https://b.zmtcdn.com/data/dish_photos/60b/85466ac4f77f271a9f3cb09f57e6e60b.jpg?output-format=webp",
+      "description": "Honey glazed fried chicken",
+      "weight": "250g",
+      "pieces": "4",
+      "serves": "1",
+      "price": {
+        "originalPrice": 239,
+        "discountedPrice": 215,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0427",
+      "name": "Garlic Fried Chicken",
+      "slug": "garlic-fried-chicken",
+      "categoryId": 19,
+      "category": "Fried Chicken",
+      "image": "https://b.zmtcdn.com/data/dish_photos/b86/cd612194fe870d073e87a3aea07acb86.jpg",
+      "description": "Garlic flavored fried chicken",
+      "weight": "250g",
+      "pieces": "4",
+      "serves": "1",
+      "price": {
+        "originalPrice": 249,
+        "discountedPrice": 224,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a0428",
+      "name": "Peri Peri Fried Chicken",
+      "slug": "peri-peri-fried-chicken",
+      "categoryId": 19,
+      "category": "Fried Chicken",
+      "image": "https://b.zmtcdn.com/data/dish_photos/e2a/d58a708115ca403630d4ef38ac1afe2a.jpg",
+      "description": "Peri peri spiced fried chicken",
+      "weight": "250g",
+      "pieces": "4",
+      "serves": "1",
+      "price": {
+        "originalPrice": 259,
+        "discountedPrice": 233,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.7, "reviews": null }
+    },
+
+    {
+      "id": "696fc164ba31e68e0a7a0429",
+      "name": "Classic Hot Dog",
+      "slug": "classic-hot-dog",
+      "categoryId": 20,
+      "category": "Hot Dog",
+      "image": "https://b.zmtcdn.com/data/dish_photos/826/7eb614bd8e7b0448af7fac31c3bb7826.jpg?output-format=webp",
+      "description": "Juicy classic hot dog",
+      "weight": "150g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 129,
+        "discountedPrice": 116,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.4, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a042a",
+      "name": "Cheese Hot Dog",
+      "slug": "cheese-hot-dog",
+      "categoryId": 20,
+      "category": "Hot Dog",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/9/30/d2a42746-47ec-4299-b6ff-d31f58678a41_f2ad9699-0d31-4768-8e84-3407384fd7ea.jpg",
+      "description": "Cheese stuffed hot dog",
+      "weight": "150g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 149,
+        "discountedPrice": 134,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a042b",
+      "name": "Spicy Hot Dog",
+      "slug": "spicy-hot-dog",
+      "categoryId": 20,
+      "category": "Hot Dog",
+      "image": "https://b.zmtcdn.com/data/dish_photos/67b/53a95f2a77fc025a25314fda0ac4d67b.jpeg?output-format=webp",
+      "description": "Hot & spicy flavor",
+      "weight": "150g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 139,
+        "discountedPrice": 125,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.3, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a042c",
+      "name": "Chicken Hot Dog",
+      "slug": "chicken-hot-dog",
+      "categoryId": 20,
+      "category": "Hot Dog",
+      "image": "https://b.zmtcdn.com/data/dish_photos/814/a42d16ea950d2691bebd65a05b956814.jpg?output-format=webp",
+      "description": "Juicy chicken hot dog",
+      "weight": "150g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 159,
+        "discountedPrice": 143,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.5, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a042d",
+      "name": "Loaded Hot Dog",
+      "slug": "loaded-hot-dog",
+      "categoryId": 20,
+      "category": "Hot Dog",
+      "image": "https://b.zmtcdn.com/data/dish_photos/5ab/a2fb1c19f87c20d9e16f34bbe4a305ab.jpg?output-format=webp",
+      "description": "Loaded with toppings",
+      "weight": "180g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 179,
+        "discountedPrice": 161,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.6, "reviews": null }
+    },
+    {
+      "id": "696fc164ba31e68e0a7a042e",
+      "name": "Jumbo Hot Dog",
+      "slug": "jumbo-hot-dog",
+      "categoryId": 20,
+      "category": "Hot Dog",
+      "image": "https://images.unsplash.com/photo-1606755962773-d324e0a13086",
+      "description": "Extra large jumbo hot dog",
+      "weight": "200g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "originalPrice": 199,
+        "discountedPrice": 179,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": { "value": 4.8, "reviews": null }
+    },
+
+    {
+      "id": "69936dfd4564495c6729a575",
+      "name": "Kaju Katli",
+      "slug": "kaju-katli",
+      "categoryId": 21,
+      "category": "Sweets",
+      "image": "https://b.zmtcdn.com/data/dish_photos/651/c28572cdf4b81ec3dad34efae51f8651.jpg?output-format=webp",
+      "description": "Premium cashew fudge with rich silver leaf finish",
+      "weight": "500 g",
+      "pieces": "20-25",
+      "serves": "6",
+      "price": {
+        "originalPrice": 899,
+        "discountedPrice": 799,
+        "discountPercent": 11
+      },
+      "isAvailable": true,
+      "rating": {
+        "value": 4.7,
+        "reviews": 210
+      }
+    },
+    {
+      "id": "69936dfd4564495c6729a576",
+      "name": "Gulab Jamun",
+      "slug": "gulab-jamun",
+      "categoryId": 21,
+      "category": "Sweets",
+      "image": "https://b.zmtcdn.com/data/dish_photos/e65/be7425be2eb78c17835c55c7765ace65.jpg?output-format=webp",
+      "description": "Soft, juicy jamuns soaked in aromatic sugar syrup",
+      "weight": "1 kg",
+      "pieces": "18-22",
+      "serves": "6",
+      "price": {
+        "originalPrice": 499,
+        "discountedPrice": 399,
+        "discountPercent": 20
+      },
+      "isAvailable": true,
+      "rating": {
+        "value": 4.6,
+        "reviews": 185
+      }
+    },
+    {
+      "id": "69936dfd4564495c6729a577",
+      "name": "Rasgulla",
+      "slug": "rasgulla",
+      "categoryId": 21,
+      "category": "Sweets",
+      "image": "https://b.zmtcdn.com/data/dish_photos/1af/145fbb7f1251793390c085740a4951af.jpeg?output-format=webp",
+      "description": "Spongy cottage cheese balls in light sugar syrup",
+      "weight": "1 kg",
+      "pieces": "15-18",
+      "serves": "6",
+      "price": {
+        "originalPrice": 459,
+        "discountedPrice": 389,
+        "discountPercent": 15
+      },
+      "isAvailable": true,
+      "rating": {
+        "value": 4.5,
+        "reviews": 160
+      }
+    },
+    {
+      "id": "69936dfd4564495c6729a578",
+      "name": "Motichoor Ladoo (Small Pack)",
+      "slug": "motichoor-ladoo-small-pack",
+      "categoryId": 21,
+      "category": "Sweets",
+      "image": "https://b.zmtcdn.com/data/dish_photos/da3/bc096ed75047c248607603bcfb1d2da3.jpeg?output-format=webp",
+      "description": "Soft and aromatic ladoos made with fine besan pearls",
+      "weight": "250 g",
+      "pieces": "6-8",
+      "serves": "2-3",
+      "price": {
+        "originalPrice": 249,
+        "discountedPrice": 249,
+        "discountPercent": 0
+      },
+      "isAvailable": true,
+      "rating": {
+        "value": 4.3,
+        "reviews": 95
+      }
+    },
+    {
+      "id": "69936dfd4564495c6729a579",
+      "name": "Milk Barfi",
+      "slug": "milk-barfi",
+      "categoryId": 21,
+      "category": "Sweets",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/FOOD_CATALOG/IMAGES/CMS/2025/2/11/26cacaae-3140-4821-b61d-d74cdcc8adeb_376cd01b-23dc-4b95-90dc-404c13654421.jpeg",
+      "description": "Classic milk barfi with rich and creamy texture",
+      "weight": "500 g",
+      "pieces": "12-16",
+      "serves": "5",
+      "price": {
+        "originalPrice": 399,
+        "discountedPrice": 359,
+        "discountPercent": 10
+      },
+      "isAvailable": true,
+      "rating": {
+        "value": 4.4,
+        "reviews": 130
+      }
+    },
+    {
+      "id": "69936dfd4564495c6729a57a",
+      "name": "Rasmalai",
+      "slug": "rasmalai",
+      "categoryId": 21,
+      "category": "Sweets",
+      "image": "https://b.zmtcdn.com/data/dish_photos/bf5/cf3bce1549fe45b8af45b93c9ff7cbf5.jpg?output-format=webp",
+      "description": "Soft paneer discs soaked in saffron flavored milk",
+      "weight": "500 g",
+      "pieces": "8-10",
+      "serves": "4",
+      "price": {
+        "originalPrice": 549,
+        "discountedPrice": 479,
+        "discountPercent": 13
+      },
+      "isAvailable": true,
+      "rating": {
+        "value": 4.6,
+        "reviews": 175
+      }
+    },
+
+    {
+      "id": "69937b6407603f96897d4519",
+      "name": "Mango Lassi",
+      "slug": "mango-lassi",
+      "categoryId": 22,
+      "category": "Beverages",
+      "image": "https://b.zmtcdn.com/data/dish_photos/4ff/7e92e177eb64b857c7651e40fd3cd4ff.jpg",
+      "description": "Rich, creamy yogurt blended with sweet mangoes",
+      "weight": "300 ml",
+      "pieces": "1 bottle",
+      "serves": "1",
+      "price": {
+        "originalPrice": 120,
+        "discountedPrice": 99,
+        "discountPercent": 18
+      },
+      "isAvailable": true,
+      "rating": {
+        "value": 4.6,
+        "reviews": 95
+      }
+    },
+    {
+      "id": "69937b6407603f96897d451a",
+      "name": "Cold Coffee",
+      "slug": "cold-coffee",
+      "categoryId": 22,
+      "category": "Beverages",
+      "image": "https://b.zmtcdn.com/data/dish_photos/79d/28ce00688861423b99ac813b0cd6979d.jpg?output-format=webp",
+      "description": "Smooth chilled coffee blended with milk & ice",
+      "weight": "350 ml",
+      "pieces": "1 cup",
+      "serves": "1",
+      "price": {
+        "originalPrice": 150,
+        "discountedPrice": 119,
+        "discountPercent": 21
+      },
+      "isAvailable": true,
+      "rating": {
+        "value": 4.5,
+        "reviews": 120
+      }
+    },
+    {
+      "id": "69937b6407603f96897d451b",
+      "name": "Blue Lagoon Mojito",
+      "slug": "blue-lagoon-mojito",
+      "categoryId": 22,
+      "category": "Beverages",
+      "image": "https://imgs.search.brave.com/3zHs0d4QTcIupdx-5iXGhQeC8SwQwY34ySt5lTFzxGw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9iZXlvbmQtY2F0ZXJpbmctYm91dGlxdWUub2Rvby5jb20vd2ViL2ltYWdlL3Byb2R1Y3QucHJvZHVjdC8xOTEvaW1hZ2VfMTAyNC9Nb2ppdG8lMjBCbHVlJTIwbGFnb29uP3VuaXF1ZT02NThmMWFl",
+      "description": "Refreshing citrus drink with a cool blue twist",
+      "weight": "300 ml",
+      "pieces": "1 glass",
+      "serves": "1",
+      "price": {
+        "originalPrice": 180,
+        "discountedPrice": 149,
+        "discountPercent": 17
+      },
+      "isAvailable": true,
+      "rating": {
+        "value": 4.4,
+        "reviews": 80
+      }
+    },
+    {
+      "id": "69937b6407603f96897d451c",
+      "name": "Strawberry Milkshake",
+      "slug": "strawberry-milkshake",
+      "categoryId": 22,
+      "category": "Beverages",
+      "image": "https://b.zmtcdn.com/data/dish_photos/d9c/5725613d444dcbdc429ea4f90fd27d9c.jpg",
+      "description": "Thick milkshake made with real strawberries",
+      "weight": "400 ml",
+      "pieces": "1 bottle",
+      "serves": "1",
+      "price": {
+        "originalPrice": 170,
+        "discountedPrice": 139,
+        "discountPercent": 18
+      },
+      "isAvailable": true,
+      "rating": {
+        "value": 4.6,
+        "reviews": 110
+      }
+    },
+    {
+      "id": "69937b6407603f96897d451d",
+      "name": "Fresh Lime Soda",
+      "slug": "fresh-lime-soda",
+      "categoryId": 22,
+      "category": "Beverages",
+      "image": "https://b.zmtcdn.com/data/dish_photos/5e5/35aa7bfc9fbd797ca8ee6282b848b5e5.jpg?output-format=webp",
+      "description": "Classic lime soda for instant refreshment",
+      "weight": "300 ml",
+      "pieces": "1 glass",
+      "serves": "1",
+      "price": {
+        "originalPrice": 90,
+        "discountedPrice": 79,
+        "discountPercent": 12
+      },
+      "isAvailable": true,
+      "rating": {
+        "value": 4.3,
+        "reviews": 70
+      }
+    },
+    {
+      "id": "69937b6407603f96897d451e",
+      "name": "Chocolate Thick Shake",
+      "slug": "chocolate-thick-shake",
+      "categoryId": 22,
+      "category": "Beverages",
+      "image": "https://b.zmtcdn.com/data/dish_photos/740/2b809ba4751e1ae9398dff2d18967740.jpg",
+      "description": "Rich & creamy chocolate shake topped with cocoa",
+      "weight": "400 ml",
+      "pieces": "1 bottle",
+      "serves": "1",
+      "price": {
+        "originalPrice": 190,
+        "discountedPrice": 159,
+        "discountPercent": 16
+      },
+      "isAvailable": true,
+      "rating": {
+        "value": 4.7,
+        "reviews": 140
+      }
+    }
+  ]
+}

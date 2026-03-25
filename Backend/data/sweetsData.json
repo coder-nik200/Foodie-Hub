@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "id": "69936dfd4564495c6729a575",
+      "name": "Kaju Katli",
+      "image": "https://b.zmtcdn.com/data/dish_photos/651/c28572cdf4b81ec3dad34efae51f8651.jpg?output-format=webp",
+      "weight": "500 g",
+      "pieces": "20-25",
+      "serves": 6,
+      "basePrice": 899,
+      "discountedPrice": 799,
+      "discountPercentage": 11,
+      "uspDescription": "Premium cashew fudge with rich silver leaf finish",
+      "rating": {
+        "value": 4.7,
+        "reviews": 210
+      }
+    },
+    {
+      "id": "69936dfd4564495c6729a576",
+      "name": "Gulab Jamun",
+      "image": "https://b.zmtcdn.com/data/dish_photos/e65/be7425be2eb78c17835c55c7765ace65.jpg?output-format=webp",
+      "weight": "1 kg",
+      "pieces": "18-22",
+      "serves": 6,
+      "basePrice": 499,
+      "discountedPrice": 399,
+      "discountPercentage": 20,
+      "uspDescription": "Soft, juicy jamuns soaked in aromatic sugar syrup",
+      "rating": {
+        "value": 4.6,
+        "reviews": 185
+      }
+    },
+    {
+      "id": "69936dfd4564495c6729a577",
+      "name": "Rasgulla",
+      "image": "https://b.zmtcdn.com/data/dish_photos/1af/145fbb7f1251793390c085740a4951af.jpeg?output-format=webp",
+      "weight": "1 kg",
+      "pieces": "15-18",
+      "serves": 6,
+      "basePrice": 459,
+      "discountedPrice": 389,
+      "discountPercentage": 15,
+      "uspDescription": "Spongy cottage cheese balls in light sugar syrup",
+      "rating": {
+        "value": 4.5,
+        "reviews": 160
+      }
+    },
+    {
+      "id": "69936dfd4564495c6729a578",
+      "name": "Motichoor Ladoo (Small Pack)",
+      "image": "https://b.zmtcdn.com/data/dish_photos/da3/bc096ed75047c248607603bcfb1d2da3.jpeg?output-format=webp",
+      "weight": "250 g",
+      "pieces": "6-8",
+      "serves": "2-3",
+      "basePrice": 249,
+      "discountedPrice": 249,
+      "discountPercentage": 0,
+      "uspDescription": "Soft and aromatic ladoos made with fine besan pearls",
+      "rating": {
+        "value": 4.3,
+        "reviews": 95
+      }
+    },
+    {
+      "id": "69936dfd4564495c6729a579",
+      "name": "Milk Barfi",
+      "image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/FOOD_CATALOG/IMAGES/CMS/2025/2/11/26cacaae-3140-4821-b61d-d74cdcc8adeb_376cd01b-23dc-4b95-90dc-404c13654421.jpeg",
+      "weight": "500 g",
+      "pieces": "12-16",
+      "serves": 5,
+      "basePrice": 399,
+      "discountedPrice": 359,
+      "discountPercentage": 10,
+      "uspDescription": "Classic milk barfi with rich and creamy texture",
+      "rating": {
+        "value": 4.4,
+        "reviews": 130
+      }
+    },
+    {
+      "id": "69936dfd4564495c6729a57a",
+      "name": "Rasmalai",
+      "image": "https://b.zmtcdn.com/data/dish_photos/bf5/cf3bce1549fe45b8af45b93c9ff7cbf5.jpg?output-format=webp",
+      "weight": "500 g",
+      "pieces": "8-10",
+      "serves": 4,
+      "basePrice": 549,
+      "discountedPrice": 479,
+      "discountPercentage": 13,
+      "uspDescription": "Soft paneer discs soaked in saffron flavored milk",
+      "rating": {
+        "value": 4.6,
+        "reviews": 175
+      }
+    }
+  ]
+}

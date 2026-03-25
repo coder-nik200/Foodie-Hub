@@ -1,0 +1,363 @@
+{
+  "products": [
+    {
+      "id": "69935e60b2cd1d52b7269bc0",
+      "name": "Cheese Burst Pizza",
+      "slug": "cheese-burst-pizza",
+      "category": "Pizza",
+      " image": "https://b.zmtcdn.com/data/pictures/2/21599322/072634f623a1fbecee6eef9baff241d8_o2_featured_v2.jpg",
+      "usp": "Loaded with extra cheese and crispy crust",
+      "weight": "10 inch",
+      "pieces": "6 slices",
+      "serves": "2",
+      "price": {
+        "mrp": 399,
+        "discountedPrice": 299,
+        "discountPercent": 25
+      },
+      "rating": {
+        "value": 4.5,
+        "reviews": 120
+      }
+    },
+    {
+      "id": "69935e60b2cd1d52b7269bc1",
+      "name": "Classic Veg Burger",
+      "slug": "classic-veg-burger",
+      "category": "Burger",
+      " image": "https://b.zmtcdn.com/data/pictures/0/21007700/c552f962b46707508d14e75da567f17a_o2_featured_v2.jpg?output-format=webp",
+      "usp": "Crispy patty with fresh veggies and mayo",
+      "weight": "180g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "mrp": 149,
+        "discountedPrice": 119,
+        "discountPercent": 20
+      },
+      "rating": {
+        "value": 4.2,
+        "reviews": 90
+      }
+    },
+    {
+      "id": "69935e60b2cd1d52b7269bc2",
+      "name": "Chicken Zinger Burger",
+      "slug": "chicken-zinger-burger",
+      "category": "Burger",
+      " image": "https://b.zmtcdn.com/data/dish_photos/2cd/554a151953be2415e44e3d561e8742cd.jpg?output-format=webp",
+      "usp": "Crunchy chicken fillet with spicy sauce",
+      "weight": "220g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "mrp": 219,
+        "discountedPrice": 179,
+        "discountPercent": 18
+      },
+      "rating": {
+        "value": 4.4,
+        "reviews": 75
+      }
+    },
+    {
+      "id": "69935e60b2cd1d52b7269bc3",
+      "name": "French Fries (Large)",
+      "slug": "french-fries-large",
+      "category": "Snacks",
+      " image": "https://b.zmtcdn.com/data/dish_photos/549/f6d0746969e5a68746d7037aa65b4549.jpeg?output-format=webp",
+      "usp": "Golden, crispy and lightly salted fries",
+      "weight": "200g",
+      "pieces": "1 box",
+      "serves": "1-2",
+      "price": {
+        "mrp": 129,
+        "discountedPrice": 99,
+        "discountPercent": 23
+      },
+      "rating": {
+        "value": 4.0,
+        "reviews": 150
+      }
+    },
+    {
+      "id": "69935e60b2cd1d52b7269bc4",
+      "name": "Chicken Popcorn",
+      "slug": "chicken-popcorn",
+      "category": "Snacks",
+      " image": "https://b.zmtcdn.com/data/dish_photos/f30/1bac609dc6e747b68d824c60aa54bf30.jpg",
+      "usp": "Bite-sized crispy fried chicken",
+      "weight": "250g",
+      "pieces": "20-25",
+      "serves": "2",
+      "price": {
+        "mrp": 249,
+        "discountedPrice": 199,
+        "discountPercent": 20
+      },
+      "rating": {
+        "value": 4.3,
+        "reviews": 65
+      }
+    },
+    {
+      "id": "69935e60b2cd1d52b7269bc5",
+      "name": "Chicken Shawarma Roll",
+      "slug": "chicken-shawarma-roll",
+      "category": "Wraps",
+      " image": "https://imgs.search.brave.com/GHXNIoOU7I4AFwvqaL4p2s5rAmembadhnUuxtEcwyzA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/YWxscmVjaXBlcy5j/b20vdGhtYi9EVzI1/a0o3cHFqLXlybVhh/dHc0dmpEZVh2aVE9/LzB4NTEyL2ZpbHRl/cnM6bm9fdXBzY2Fs/ZSgpOm1heF9ieXRl/cygxNTAwMDApOnN0/cmlwX2ljYygpLzUy/NDA3LWNoaWNrZW4t/c2hhd2FybWEtVkFU/LTAwMy00eDMtMDEt/MzE4OWJhYjQ0M2Qx/NGJmMjgyZmZjYzNi/ODdiY2Y1NWEuanBn",
+      "usp": "Juicy chicken wrapped in soft pita bread",
+      "weight": "280g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "mrp": 199,
+        "discountedPrice": 159,
+        "discountPercent": 20
+      },
+      "rating": {
+        "value": 4.6,
+        "reviews": 110
+      }
+    },
+    {
+      "id": "69935e60b2cd1d52b7269bc6",
+      "name": "Veg Loaded Nachos",
+      "slug": "veg-loaded-nachos",
+      "category": "Snacks",
+      " image": "https://imgs.search.brave.com/XrY9VBFT8vwFmD1-0rXO7fQ7bCybRdwZ-xDyVLxpp94/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/dGFtaW5ndHdpbnMu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIyLzA3L3ZlZ2dp/ZS1uYWNob3MtMi5q/cGc",
+      "weight": "300g",
+      "pieces": "1 plate",
+      "serves": "2-3",
+      "price": {
+        "mrp": 249,
+        "discountedPrice": 189,
+        "discountPercent": 24
+      },
+      "rating": {
+        "value": 4.1,
+        "reviews": 85
+      }
+    },
+    {
+      "id": "69935e60b2cd1d52b7269bc7",
+      "name": "Cold Coffee with Ice Cream",
+      "slug": "cold-coffee-ice-cream",
+      "category": "Beverages",
+      " image": "https://b.zmtcdn.com/data/dish_photos/944/d2ce2789ef20b4ebf45966c242168944.jpg?output-format=webp",
+      "usp": "Chilled coffee topped with vanilla ice cream",
+      "weight": "350ml",
+      "pieces": "1 glass",
+      "serves": "1",
+      "price": {
+        "mrp": 179,
+        "discountedPrice": 139,
+        "discountPercent": 22
+      },
+      "rating": {
+        "value": 4.4,
+        "reviews": 95
+      }
+    },
+    {
+      "id": "69935e60b2cd1d52b7269bc8",
+      "name": "Paneer Tikka Wrap",
+      "slug": "paneer-tikka-wrap",
+      "category": "Wraps",
+      " image": "https://b.zmtcdn.com/data/dish_photos/77e/f1bf81209279828ce37a0625833a677e.jpg?output-format=webp",
+      "usp": "Spicy paneer tikka wrapped with fresh veggies and sauce",
+      "weight": "260g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "mrp": 189,
+        "discountedPrice": 149,
+        "discountPercent": 21
+      },
+      "rating": {
+        "value": 4.3,
+        "reviews": 80
+      }
+    },
+    {
+      "id": "69935e60b2cd1d52b7269bc9",
+      "name": "Butter Chicken with Naan",
+      "slug": "butter-chicken-naan",
+      "category": "Main Course",
+      " image": "https://b.zmtcdn.com/data/dish_photos/8cb/3f6fcd3993ec8cb6bc82c23f126a48cb.jpg?output-format=webp",
+      "usp": "Creamy butter chicken served with soft naan",
+      "weight": "450g",
+      "pieces": "2 naan",
+      "serves": "2",
+      "price": {
+        "mrp": 349,
+        "discountedPrice": 279,
+        "discountPercent": 20
+      },
+      "rating": {
+        "value": 4.7,
+        "reviews": 140
+      }
+    },
+    {
+      "id": "69935e60b2cd1d52b7269bca",
+      "name": "Veg Biryani",
+      "slug": "veg-biryani",
+      "category": "Rice",
+      " image": "https://b.zmtcdn.com/data/dish_photos/262/785573587a3fb599a65f8cdf5f706262.jpeg",
+      "usp": "Aromatic basmati rice cooked with fresh vegetables",
+      "weight": "400g",
+      "pieces": "1 bowl",
+      "serves": "1-2",
+      "price": {
+        "mrp": 229,
+        "discountedPrice": 179,
+        "discountPercent": 22
+      },
+      "rating": {
+        "value": 4.5,
+        "reviews": 100
+      }
+    },
+    {
+      "id": "69935e60b2cd1d52b7269bcb",
+      "name": "Chocolate Lava Cake",
+      "slug": "chocolate-lava-cake",
+      "category": "Dessert",
+      " image": "https://b.zmtcdn.com/data/dish_photos/87f/2c44e1283b290fd64e08691f3338787f.jpeg?output-format=webp",
+      "usp": "Warm chocolate cake with molten center",
+      "weight": "120g",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "mrp": 149,
+        "discountedPrice": 119,
+        "discountPercent": 20
+      },
+      "rating": {
+        "value": 4.6,
+        "reviews": 90
+      }
+    },
+    {
+      "id": "69935e60b2cd1d52b7269bcc",
+      "name": "Tandoori Chicken (Half)",
+      "slug": "tandoori-chicken-half",
+      "category": "Starters",
+      " image": "https://b.zmtcdn.com/data/dish_photos/1ca/d934aea04bcd0548d88504906f0ad1ca.jpg?output-format=webp",
+      "usp": "Smoky tandoori chicken marinated in spices",
+      "weight": "450g",
+      "pieces": "4 pcs",
+      "serves": "2",
+      "price": {
+        "mrp": 399,
+        "discountedPrice": 329,
+        "discountPercent": 18
+      },
+      "rating": {
+        "value": 4.8,
+        "reviews": 130
+      }
+    },
+    {
+      "id": "69935e60b2cd1d52b7269bcd",
+      "name": "Masala Dosa",
+      "slug": "masala-dosa",
+      "category": "South Indian",
+      " image": "https://b.zmtcdn.com/data/dish_photos/078/dbcffeb70eb08ec763f8d00d38c69078.jpg?output-format=webp",
+      "usp": "Crispy dosa stuffed with spicy potato masala",
+      "weight": "1 plate",
+      "pieces": "1",
+      "serves": "1",
+      "price": {
+        "mrp": 149,
+        "discountedPrice": 119,
+        "discountPercent": 20
+      },
+      "rating": {
+        "value": 4.4,
+        "reviews": 85
+      }
+    },
+    {
+      "id": "69935e60b2cd1d52b7269bce",
+      "name": "Chole Bhature",
+      "slug": "chole-bhature",
+      "category": "North Indian",
+      " image": "https://b.zmtcdn.com/data/dish_photos/0c9/04d73ec4a9436256ec9bf39147a560c9.jpg?output-format=webp",
+      "usp": "Spicy chickpeas served with fluffy bhature",
+      "weight": "2 bhature",
+      "pieces": "1 plate",
+      "serves": "1-2",
+      "price": {
+        "mrp": 199,
+        "discountedPrice": 159,
+        "discountPercent": 20
+      },
+      "rating": {
+        "value": 4.3,
+        "reviews": 95
+      }
+    },
+    {
+      "id": "69935e60b2cd1d52b7269bcf",
+      "name": "Strawberry Milkshake",
+      "slug": "strawberry-milkshake",
+      "category": "Beverages",
+      " image": "https://b.zmtcdn.com/data/dish_photos/1e4/22b8895d51fabc6dbae975c8fda851e4.jpeg",
+      "usp": "Creamy strawberry shake with fresh pulp",
+      "weight": "400ml",
+      "pieces": "1 glass",
+      "serves": "1",
+      "price": {
+        "mrp": 159,
+        "discountedPrice": 129,
+        "discountPercent": 19
+      },
+      "rating": {
+        "value": 4.2,
+        "reviews": 75
+      }
+    },
+    {
+      "id": "69935e60b2cd1d52b7269bd0",
+      "name": "Vanilla Ice Cream",
+      "slug": "vanilla-ice-cream",
+      "category": "Dessert",
+      " image": "https://b.zmtcdn.com/data/pictures/chains/8/19428618/55bc3ca3172d678a005f9c152949154b_o2_featured_v2.jpg?output-format=webp",
+      "usp": "Classic creamy vanilla ice cream",
+      "weight": "150g",
+      "pieces": "2 scoops",
+      "serves": "1",
+      "price": {
+        "mrp": 99,
+        "discountedPrice": 79,
+        "discountPercent": 20
+      },
+      "rating": {
+        "value": 4.5,
+        "reviews": 60
+      }
+    },
+    {
+      "id": "69935e60b2cd1d52b7269bd1",
+      "name": "Paneer Butter Masala Pizza",
+      "slug": "paneer-butter-masala-pizza",
+      "category": "Pizza",
+      " image": "https://b.zmtcdn.com/data/pictures/3/20346383/cb711ccd47df40fea53b00ea3e02409b_o2_featured_v2.jpg?output-format=webp",
+      "usp": "Fusion pizza topped with creamy paneer butter masala",
+      "weight": "10 inch",
+      "pieces": "6 slices",
+      "serves": "2",
+      "price": {
+        "mrp": 449,
+        "discountedPrice": 349,
+        "discountPercent": 22
+      },
+      "rating": {
+        "value": 4.6,
+        "reviews": 100
+      }
+    }
+  ]
+}
